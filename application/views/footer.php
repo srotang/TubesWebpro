@@ -12,7 +12,6 @@
     <title>Footer</title>
 
     <style>
-    /* halo webproQ */
     .footer-page{
         background-color :#4E5F55;
         
