@@ -25,16 +25,29 @@
     h2{
         font-family : Verdana, sans-serif;
         font-size : 14px;
-        font-weight : 700;
+        font-weight : bold;
         letter-spacing : -1px;
         color :  #EC1359;
         margin : 30px 0 0 190px;
     }
+    .form-regis input{
+        height : 34px;
+        width : 429px;
+        margin : 5px 0 0 180px;
+    }
+    .form-regis label{
+        font-family : Verdana, Arial, sans-serif;
+        font-size : 12px;
+        font-weight : bold;
+        line-height : 20px;
+        text-align : right;
+        margin : 22px 0 0 390px;
+        display : table-cell;
+        }
     </style>
 </head>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 <body>
-    <form action="">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col">
@@ -49,10 +62,27 @@
                                         <li>Actively participate in the largest art community in the world (over 48 million members)</li>
                                     </ul>
                                 </div>
+                                <form class="form-regis">
+                                    <div>
+                                        <label >Username</label>
+                                        <input type="text" name="cusername" id="cusername" value="" class="text" size="30" maxlength="20">
+                                    </div>
+                                    <div>
+                                        <label>Email Address</label>
+                                        <input type="text" name="email1" id="email1" value="" class="text" size="30" maxlength="255">
+                                    </div>
+                                    <div>
+                                        <label class="ll" for="email2">Retype Email Address</label>
+                                        <input type="text" name="email2" id="email2" value="" class="text" size="30" maxlength="255">
+                                    </div>
+                                    <div>
+                                        <label for="password1">Password</label>
+                                        <input type="password" class="text" id="password1" name="password1" required="required" pattern=".{6,}" title="Please enter a password that is at least 6 characters long" value="" size="30">
+                                    </div>
+                                </form>
                     </div>
                 </div>
             </div>
         </div>
-    </form>
 </body>
 </html>
