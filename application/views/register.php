@@ -30,19 +30,32 @@
         color :  #EC1359;
         margin : 30px 0 0 190px;
     }
-    .form-regis input{
+    .table-label input{
         height : 34px;
         width : 429px;
-        margin : 5px 0 0 180px;
+        margin : 5px;
+        padding : 3px 3px 4px 4px;
+        color: white;
+        border: 1px solid  #CCCCCC;
+        border-top-left-radius : 3px;
+        border-top-right-radius : 3px;
+        border-bottom-left-radius : 3px;
+        border-bottom-right-radius: 3px;
     }
-    .form-regis label{
+    .table-label{
         font-family : Verdana, Arial, sans-serif;
         font-size : 12px;
         font-weight : bold;
-        line-height : 20px;
-        text-align : right;
-        margin : 22px 0 0 390px;
         display : table-cell;
+        cursor: default;
+        display : table-cell;
+        padding : 1px 10px 1px 1px;
+        text-decoration : none solid rgb(0, 0, 0);
+        text-align : right;
+        vertical-align : middle;
+        word-spacing : 0px;
+        font-weight: bold;
+        color :  #53625E;
         }
     </style>
 </head>
@@ -62,27 +75,55 @@
                                         <li>Actively participate in the largest art community in the world (over 48 million members)</li>
                                     </ul>
                                 </div>
-                                <form class="form-regis">
-                                    <div>
-                                        <label >Username</label>
-                                        <input type="text" name="cusername" id="cusername" value="" class="text" size="30" maxlength="20">
-                                    </div>
-                                    <div>
-                                        <label>Email Address</label>
-                                        <input type="text" name="email1" id="email1" value="" class="text" size="30" maxlength="255">
-                                    </div>
-                                    <div>
-                                        <label class="ll" for="email2">Retype Email Address</label>
-                                        <input type="text" name="email2" id="email2" value="" class="text" size="30" maxlength="255">
-                                    </div>
-                                    <div>
-                                        <label for="password1">Password</label>
-                                        <input type="password" class="text" id="password1" name="password1" required="required" pattern=".{6,}" title="Please enter a password that is at least 6 characters long" value="" size="30">
-                                    </div>
-                                </form>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col">
+                    <form class="form-regis" action="">
+                        <table style="position: absolute;left: 35px;">
+                            <tbody>
+                                <tr>
+                                    <td class="table-label">
+                                        <label>Username</label>
+                                        <input type="text" name="cusername" id="cusername" value="" class="text" size="30" maxlength="20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label">
+                                        <label>Email Address</label>
+                                        <input type="text" name="email1" id="email1" value="" class="text" size="30" maxlength="255">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label">
+                                        <label class="ll" for="email2">Retype Email Address</label>
+                                        <input type="text" name="email2" id="email2" value="" class="text" size="30" maxlength="255">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-label">
+                                        <label for="password1">Password</label>
+                                        <input type="password" class="text" id="password1" name="password1" required="required" pattern=".{6,}" title="Please enter a password that is at least 6 characters long" value="" size="30">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p class="pw-meter-inline-text">
+                                            Keep your account safe by using a strong password. Including uppercase and lowercase letters, 
+                                            as well as numbers and symbols, can help make a password stronger. 
+                                            <a href="#" class="password-stength-tips" onclick="PasswordInfo.showInfoModal();if (window.event) event.cancelBubble = true;return false;">More information</a>
+                                        </p>                                    
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     </form>
+                </div>
+            </div>
+        </div>
+        
 </body>
 </html>
