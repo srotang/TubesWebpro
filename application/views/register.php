@@ -15,38 +15,44 @@
     body{
         background-color : #F8F8F8;
     }
+    .list ul li{
+        font-family : Verdana, sans-serif;
+        font-size : 14px;
+        color :  #52615D;
+        /* line-height : 17px; */
+        margin : 10px 0 0 180px;
+    }
+    h2{
+        font-family : Verdana, sans-serif;
+        font-size : 14px;
+        font-weight : 700;
+        letter-spacing : -1px;
+        color :  #EC1359;
+        margin : 30px 0 0 190px;
+    }
     </style>
-    </head>
+</head>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 <body>
-    
-    <div>
-        <img src="regis1.png" style="width: 300px;">
-        <h2>As a FREE member you can:</h2>
-        <ul>
-            <li>Browse over 375 million unique pieces of art</li>
-            <li>Exhibit, promote and share your art with fellow artists and art enthusiasts</li>
-            <li>Sell Prints and digital downloads of your work</li>
-            <li>Actively participate in the largest art community in the world (over 48 million members)</li>
-        </ul>
-    </div>
-      <form action="">
-      <div>
-        <label >Username</label>
-        <input type="text" name="cusername" id="cusername" value="" class="text" size="30" maxlength="20"></span>
-      </div>            
-      <div >
-        <label>Email Address</label>
-        <input type="text" name="email1" id="email1" value="" class="text" size="30" maxlength="255">
-    </div>
-    <div>
-        <label class="ll" for="email2">Retype Email Address</label>
-        <input type="text" name="email2" id="email2" value="" class="text" size="30" maxlength="255">
-    </div>
-    <div>
-        <label for="password1">Password</label>
-        <input type="password" class="text" id="password1" name="password1" required="required" pattern=".{6,}" title="Please enter a password that is at least 6 characters long" value="" size="30">
-    </div>    
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col">
+                    <div>
+                    <img src="regis1.png" style="width: 350px;margin : 0px 0 0 190px;">
+                            <h2>As a FREE member you can:</h2>
+                                <div class="list">
+                                    <ul>
+                                        <li>Browse over 375 million unique pieces of art</li>
+                                        <li>Exhibit, promote and share your art with fellow artists and art enthusiasts</li>
+                                        <li>Sell Prints and digital downloads of your work</li>
+                                        <li>Actively participate in the largest art community in the world (over 48 million members)</li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 </html>
