@@ -12,16 +12,15 @@ class M_foto extends CI_model
 	public function tambahDatafoto()
 	{
 		$data = [
-			"namaF" => $this->input->post('namaF', true)
+			"title" => $this->input->post('title', true)
 		];
-
 		//use query builder to insert $data to table "foto"
 		$this->db->insert('foto', $data);
 	}
 
 	public function hapusDatafoto()
 	{
-		$this->db->delete('foto');
+		$this->db->delete('idF');
 	}
 
 	public function getfotoBynama($namaF)
