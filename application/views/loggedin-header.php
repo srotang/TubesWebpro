@@ -39,44 +39,18 @@
                     <div class="profile-dropdown">
                       <button class="profile-dropbtn">
                           <img class="avatar" src="https://a.deviantart.net/avatars/default.gif" width="20" height="20" alt="">
-                        username
+                        <!-- Tambahin Username orang yang login -->Username
                       </button>
                       <div class="profile-dropdown-content dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item prf" href="#">Profile</a>
+                        <a class="dropdown-item prf" href="#" >Profile</a><!-- Tambahin link ke profie user -->
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item " href="#">Logout</a>
+                        <a class="dropdown-item " href="#">Logout</a><!-- ke Logout session -->
                       </div>
                     </div>
                   </li>
               </ul>
             </div>
           </nav>
-          <!-- <nav class="navbar navbar-expand navbar-dark fixednav" id="myHeader">
-              <div class="" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link browses-active browses" href="#">BROWSE</a>
-                  </li>
-                  <li class="nav-item">
-                    <img class="strokee" src="css/img-css/fixednav-stroke.png" width="22px" height="41px">
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link browses" href="#">WATCH</a>
-                  </li>
-                  <li class="nav-item browses">
-                      <a class="nav-link browses" href="#">NOTIFICATION</a>
-                  </li>
-                  <li class="nav-item browses">
-                      <a class="nav-link browses" href="#">NOTES</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          <div class="contentsss">&nbsp;</div>
-            <!-- <div class="d-inline-flex p-2 bd-highlight">Content1</div>
-            <div class="contentes">Content2</div>
-            <div class="contentes">Content3</div>
-            <div class="contentes">Content4</div> -->
 
             <!--JS-->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
