@@ -25,8 +25,13 @@ class M_foto extends CI_model
 	}
 
 	public function getfotoBynama($namaF)
-	{
-		 
+	{ 
 		return $this->db->get_where('foto', ['namaf'=>$namaF])->row_array();
 	}
 }
+		public function getfotoByid($id)
+	{ 
+		return $this->db->get_where('foto', ['id'=>$id])->row_array();
+	}
+}	
+?>
