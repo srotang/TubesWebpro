@@ -19,7 +19,7 @@
         //$this->form_validation->set_rules('nama', 'NAME','required');
         $this->form_validation->set_rules('cusername', 'USERNAME','required');
         $this->form_validation->set_rules('email1','EMAIL','required|valid_email');
-        $this->form_validation->set_rules('password1','PASSWORD','required|md5');
+        $this->form_validation->set_rules('password1','PASSWORD','required');
         if($this->form_validation->run() == FALSE) {
             $this->load->view('home/register');
             echo $this->input->post('email');

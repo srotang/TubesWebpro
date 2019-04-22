@@ -55,12 +55,17 @@
 		or
 	</div>
 	<div id="btn-upload">
-        <!-- <form method="POST" id="btn-upload" enctype="multipart/form-data" action="/dapi/v1/submit/upload"> -->
+        <form method="POST" id="btn-upload" enctype="multipart/form-data" action="<?= base_url("index.php/Upload/aksi_upload")?>"> 
 		<form id="btn-upload">
 			<input type="hidden" name="action" value="StashPost" id="INPUT_8"/> <a id="A_9"> <span id="SPAN_27">Choose a file to upload</span>
 				<input type="file" name="file" id="INPUT_11" /></a>
 			<input type="hidden" name="folder_name" value="Saved Submissions" id="INPUT_12" />
 			<input type="hidden" name="use_defaults" value="1" id="INPUT_13" />
+			<div id="input-title">
+		<input id="INPUT_5" name="devtitle" maxlength="50" type="text" placeholder="Title"/>
+		<textarea name="devDesc"></textarea>
+		<input type="submit" value="submit"/>
+	</div>
 		</form>
 	</div>
 	<div id="stash">
@@ -69,9 +74,7 @@
 </div>
 <!-- <form id="form-comment" method="post" action="/global/placebo.php"> -->
 <form id="form-comment">
-	<div id="input-title">
-		<input id="INPUT_5" name="devtitle" maxlength="50" type="text" placeholder="Title"/>
-	</div>
+	
 	<div id="input-text" class="writer selectable no-lub put-art-here ui-droppable empty" contenteditable="true" style="min-height: 64px;">					
 </form>		
 <div id="download">

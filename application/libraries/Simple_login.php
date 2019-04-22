@@ -16,12 +16,12 @@
      public function login($username, $password) {
          
          //cek username dan password
-         $query = $this->CI->db->get_where('deviants',array('username'=>$username,'passwords' => $password));
+         $query = $this->CI->db->get_where('deviants',array('username'=>$username,'password' => md5($password)));
          
          if($query->num_rows() == 1) {
              //ambil data user berdasar username
              // $row  = $this->CI->db->query('SELECT id_pengguna,id_pasien, status FROM tb_pengguna join tb_pasien on tb_pengguna.id_pengguna = tb_pasien.id_pengguna where username = "'.$username.'"');
-             $this->CI->db->select('id_deviants, name, username,email');
+             $this->CI->db->select('id_deviants,nama, username,email');
              $this->CI->db->from('deviants');
              $this->CI->db->where('deviants.username',$username);
              $row = $this->CI->db->get();

@@ -117,7 +117,7 @@
                                 <tr>
                                     <td class="table-label">
                                         <label for="password1">Password</label>
-                                        <input type="password" class="text" id="password1" name="password1" required="required" pattern=".{6,}" title="Please enter a password that is at least 6 characters long" value="" size="30">
+                                        <input type="password" class="text" id="password1" name="password1" required="required"  title="Please enter a password that is at least 6 characters long" value="" size="30">
                                     </td>
                                 </tr>
                                 <tr>
