@@ -1,50 +1,52 @@
 <?php
 
-class M_akun extends CI_model
+class M_deviants extends CI_model
 {
 
-	public function getAllakun()
+	public function getAlldeviants()
 	{
-		//use query builder to get data table "akun"
-		return $this->db->get('akun')->result_array();
+		//use query builder to get data table "deviants"
+		return $this->db->get('deviants')->result_array();
 	}
 
-	public function tambahDataakun()
+	public function tambahDatadeviants()
 	{
 		$data = [
 			"nama" => $this->input->post('nama', true),
 			"email" => $this->input->post('email', true),
+			"username"=>$this->input->post('username',true),
 			"password" => $this->input->post('password', true)
 		];
 
-		//use query builder to insert $data to table "akun"
-		$this->db->insert('akun', $data);
+		//use query builder to insert $data to table "deviants"
+		$this->db->insert('deviants', $data);
 	}
 	public function tambahfotoprofile($foto)
 	{
-		$this->db->insert('fotoprofile',$foto);
+		$this->db->insert('deviants',$foto);
 	}
-	public function hapusDataakun($email)
+	public function hapusDatadeviants($email)
 	{
 		//use query builder to delete data based on email 
-		return $this->db->delete('akun', array('email' => $email));
+		return $this->db->delete('deviants', array('email' => $email));
 	}
 
-	public function getakunById($email)
+	public function getdeviantsById($email)
 	{
-		//get data akun based on email 
-		return $this->db->get_where('akun', ['email'=>$email])->row_array();
+		//get data deviants based on email 
+		return $this->db->get_where('deviants', ['email'=>$email])->row_array();
 	}
 
-	public function ubahDataakun()
+	public function ubahDatadeviants()
 	{
 		$data = [
 			"nama" => $this->input->post('nama', true),
 			"email" => $this->input->post('email', true),
-			"password" => $this->input->post('password', true)
+			"password" => $this->input->post('password', true),
+			"username"=>$this->input->post('username',true);
 		];
 		
-		$this->db->update('akun', $data);
+		$this->db->update('deviants', $data);
 	}
 }
 ?>
