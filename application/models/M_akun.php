@@ -20,7 +20,10 @@ class M_akun extends CI_model
 		//use query builder to insert $data to table "akun"
 		$this->db->insert('akun', $data);
 	}
-
+	public function tambahfotoprofile($foto)
+	{
+		$this->db->insert('fotoprofile',$foto);
+	}
 	public function hapusDataakun($email)
 	{
 		//use query builder to delete data based on email 
