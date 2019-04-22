@@ -12,24 +12,29 @@
  
      public function index() {
  
-         $this->form_validation->set_rules('nama', 'NAME','required');
-         $this->form_validation->set_rules('username', 'USERNAME','required');
-         $this->form_validation->set_rules('email','EMAIL','required|valid_email');
-         $this->form_validation->set_rules('password','PASSWORD','required');
-         if($this->form_validation->run() == FALSE) {
-             $this->load->view('home/browse');
-         }else{
- 
-             $data['nama']   =    $this->input->post('name');
-             $data['username'] =    $this->input->post('username');
-             $data['email']  =    $this->input->post('email');
-             $data['password'] =    md5($this->input->post('password'));
- 
-             $this->m_account->daftar($data);
-             
-             $pesan['message'] =    "Pendaftaran berhasil";
-             
-             $this->load->view('home/browse');
-         }
+         $this->load->view('home/register');
+     }
+
+     public function daftarRegister(){
+        //$this->form_validation->set_rules('nama', 'NAME','required');
+        $this->form_validation->set_rules('cusername', 'USERNAME','required');
+        $this->form_validation->set_rules('email1','EMAIL','required|valid_email');
+        $this->form_validation->set_rules('password1','PASSWORD','required|md5');
+        if($this->form_validation->run() == FALSE) {
+            $this->load->view('home/register');
+            echo $this->input->post('email');
+        }else{
+
+            //$data['nama']   =    $this->input->post('name');
+            $data['username'] =    $this->input->post('cusername');
+            $data['email']  =    $this->input->post('email1');
+            $data['password'] =    md5($this->input->post('password1'));
+
+            $this->M_akun->tambahDatadeviants($data);
+            
+            $pesan['message'] =    "Pendaftaran berhasil";
+            
+            redirect('index.php/home');
+        }
      }
  }

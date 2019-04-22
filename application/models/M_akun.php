@@ -1,6 +1,6 @@
 <?php
 
-class M_deviants extends CI_model
+class M_akun extends CI_model
 {
 
 	public function getAlldeviants()
@@ -9,17 +9,11 @@ class M_deviants extends CI_model
 		return $this->db->get('deviants')->result_array();
 	}
 
-	public function tambahDatadeviants()
+	public function tambahDatadeviants($data)
 	{
-		$data = [
-			"nama" => $this->input->post('nama', true),
-			"email" => $this->input->post('email', true),
-			"username"=>$this->input->post('username',true),
-			"password" => $this->input->post('password', true)
-		];
 
 		//use query builder to insert $data to table "deviants"
-		$this->db->insert('deviants', $data);
+		$this->db->insert("deviants", $data);
 	}
 	public function tambahfotoprofile($foto)
 	{
@@ -43,9 +37,8 @@ class M_deviants extends CI_model
 			"nama" => $this->input->post('nama', true),
 			"email" => $this->input->post('email', true),
 			"password" => $this->input->post('password', true),
-			"username"=>$this->input->post('username',true);
+			"username"=>$this->input->post('username',true),
 		];
-		
 		$this->db->update('deviants', $data);
 	}
 }

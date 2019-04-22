@@ -57,19 +57,20 @@
     </style>
   </head>
   <body>
-    <form class="form-login" action="">
+    <?= $this->session->flashdata("sukses")?>
+    <form class="form-login" action="<?= base_url('index.php/Login/asup') ?>" method="post">
         <table>
           <tbody style="position: absolute; left: 70px">
             <tr>
               <td class="table-label">
                   <label>Username or Email</label>
-                  <input class="text" type="text" id="login_username" name="username" value="" autofocus="autofocus"style="width:220px;">
+                  <input class="text" type="text" id="login_username" name="cusername" value="" autofocus="autofocus"style="width:220px;">
               </td>
             </tr>
             <tr>
               <td class="table-label">
                   <label>Password</label>
-                  <input class="text" type="password" id="login_password" name="password" style="width:220px;">
+                  <input class="text" type="password" id="login_password" name="password1" style="width:220px;">
               </td>
             </tr>
             <tr>
