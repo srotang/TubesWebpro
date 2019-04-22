@@ -47,3 +47,4 @@ class M_akun extends CI_model
 		$this->db->update('akun', $data);
 	}
 }
+?>
