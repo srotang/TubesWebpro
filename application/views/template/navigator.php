@@ -3,14 +3,14 @@
     <head>
     </head>
     <body>
-        <nav class="navbar navbar-expand navbar-dark fixednav" id="myHeader">
+        <nav class="navbar navbar-expand navbar-dark fixednav bg-dark" id="myHeader">
             <div class="" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link browses-active browses" href="#">BROWSE</a>
                 </li>
                 <li class="nav-item">
-                  <img class="strokee" src="css/img-css/fixednav-stroke.png" width="22px" height="41px">
+                  <img class="strokee" src=<?= base_url("assets/img-css/fixednav-stroke.png")?> width="22px" height="41px">
                 </li>
                 <li class="nav-item">
                     <a class="nav-link browses" href="#">WATCH</a>
