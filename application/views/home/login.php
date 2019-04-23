@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Log In | DeviantArt</title>
 
     <style>
+  .container-form-login{
+    width:100%;
+  }
+
+
     body{
         background-color : #CDD8C8;
     }
@@ -22,6 +19,7 @@
         height : 180px;
         width : 460px;
         margin : 20px 359px 20px 379px;
+        margin:auto;
         padding : 20px 20px 20px 20px;
         font-size: 12px;
         transform : none;
@@ -72,6 +70,7 @@
   </head>
   <body>
     <?= $this->session->flashdata("sukses")?>
+    <div class="container-form-login">
     <form class="form-login" action="<?= base_url('index.php/Login/asup') ?>" method="post">
         <table>
           <tbody style="position: absolute; left: 70px">
@@ -105,6 +104,7 @@
           </tbody>
         </table>
       </form>
+      </div>
     <tr class="footer-page" <?= base_url('template/footer')?>></tr>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

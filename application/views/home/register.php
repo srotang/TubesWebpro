@@ -14,11 +14,11 @@
     body{
         background-color : #F8F8F8;
     }
-    .list ul li{
+    .list ul{
         font-family : Verdana, sans-serif;
         font-size : 14px;
         color :  #52615D;
-        list-style:<?php base_url("assets/img-css/signup-star")?>;
+        list-style: url('<?php echo base_url();?>assets/img-css/signup-star.png');
         margin : 10px 0 0 180px;
 
     }
@@ -57,8 +57,10 @@
         color :  #53625E;
         }
     .btn input{
-        border: none;    background-color: #05cc47;
-        border-radius: 3px;color: #fff;
+        border: none;    
+        background-color: #05cc47;
+        border-radius: 3px;
+        color: #fff;
         background-image: none;
         padding: 10px 30px;
         height: 50px;
@@ -67,7 +69,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align : center;
-        margin : 20px 0 0 300px;
+        margin : 20px 0 0 60px;
         font: 17px Trebuchet MS,sans-serif;
     }
     </style>
@@ -80,7 +82,7 @@
                     <img src="<?= base_url('assets/img-css/regis1.png')?>" style="width: 350px;margin : 0px 0 0 190px;">
                             <h2>As a FREE member you can:</h2>
                                 <div class="list">
-                                    <ul>
+                                    <ul class="signup-lists">
                                         <li>Browse over 375 million unique pieces of art</li>
                                         <li>Exhibit, promote and share your art with fellow artists and art enthusiasts</li>
                                         <li>Sell Prints and digital downloads of your work</li>
