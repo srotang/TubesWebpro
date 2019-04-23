@@ -17,7 +17,10 @@ class M_akun extends CI_model
 	}
 	public function tambahfotoprofile($foto)
 	{
-		$this->db->insert('deviants',$foto);
+		$data = [
+			$foto=>$this->input->post('fotoProfile',true)
+		]
+		$this->db->update('deviants',$data);
 	}
 	public function hapusDatadeviants($id)
 	{
