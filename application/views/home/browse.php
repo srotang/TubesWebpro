@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="content">
-            <img src="" alt="">
+            <img src="base" alt="">
         </div>
 
     <!-- Optional JavaScript -->
