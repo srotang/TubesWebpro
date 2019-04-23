@@ -6,7 +6,11 @@
         
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<<<<<<< HEAD
             <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/navbar-dev.css">
+=======
+            <link rel="stylesheet" href="<?= base_url();?>/assets/css/navbar-dev.css">
+>>>>>>> b58a4b5dc519e9664c424be858db9257f6a1c423
             <title></title>
     </head>
     <body>

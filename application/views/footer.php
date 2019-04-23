@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Offline bootstrap-->
+    <script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title>Footer</title>
 
     <style>
     .footer-page{
-        clear:both;
-        margin-top:100px;
         background-color :#4E5F55;
+        
+                <div class="col-md-1">
     }
     .col p{
         font-size: 11px;
     }
-    .footer-elements li{
+    .col ul li{
         display: inline;
         margin: 5px;
         font-size: 11px;
@@ -26,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col">
-                    <ul class="footer-elements">
+                    <ul>
                         <li>©2019 DeviantArt. All rights reserved</li>
                         <li>About</li>
                         <li>Contact</li>
