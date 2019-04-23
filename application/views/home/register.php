@@ -34,7 +34,6 @@
         width : 429px;
         margin : 5px;
         padding : 3px 3px 4px 4px;
-        color: white;
         border: 1px solid  #CCCCCC;
         border-top-left-radius : 3px;
         border-top-right-radius : 3px;
@@ -77,7 +76,7 @@
             <div class="row">
                 <div class="col-md-8 col">
                     <div>
-                    <img src="regis1.png" style="width: 350px;margin : 0px 0 0 190px;">
+                    <img src="<?= base_url('assets/img-css/regis1.png')?>" style="width: 350px;margin : 0px 0 0 190px;">
                             <h2>As a FREE member you can:</h2>
                                 <div class="list">
                                     <ul>
@@ -94,7 +93,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col">
-                    <form class="form-regis" action="">
+                    <form class="form-regis" action="<?= base_url('index.php/register/daftarRegister')?>" method="post">
                         <table style="position: absolute;left: 35px;">
                             <tbody>
                                 <tr>
@@ -118,7 +117,7 @@
                                 <tr>
                                     <td class="table-label">
                                         <label for="password1">Password</label>
-                                        <input type="password" class="text" id="password1" name="password1" required="required" pattern=".{6,}" title="Please enter a password that is at least 6 characters long" value="" size="30">
+                                        <input type="password" class="text" id="password1" name="password1" required="required"  title="Please enter a password that is at least 6 characters long" value="" size="30">
                                     </td>
                                 </tr>
                                 <tr>
