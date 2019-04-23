@@ -5,13 +5,11 @@
     <style>
     .footer-page{
         background-color :#4E5F55;
-        
-                <div class="col-md-1">
     }
     .col p{
         font-size: 11px;
     }
-    .col ul li{
+    .footer-elements li{
         display: inline;
         margin: 5px;
         font-size: 11px;
@@ -26,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col">
-                    <ul>
+                    <ul class="footer-elements">
                         <li>©2019 DeviantArt. All rights reserved</li>
                         <li>About</li>
                         <li>Contact</li>
