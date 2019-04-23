@@ -19,7 +19,7 @@
         font-size : 14px;
         color :  #52615D;
         list-style: url('<?php echo base_url();?>assets/img-css/signup-star.png');
-        margin : 10px 0 0 180px;
+        margin : 10px 0 0 270px;
 
     }
     h2{
@@ -28,7 +28,7 @@
         font-weight : bold;
         letter-spacing : -1px;
         color :  #EC1359;
-        margin : 30px 0 0 190px;
+        margin : 30px 0 0 290px;
     }
     .table-label input{
         height : 34px;
@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-md-8 col">
                     <div>
-                    <img src="<?= base_url('assets/img-css/regis1.png')?>" style="width: 350px;margin : 0px 0 0 190px;">
+                    <img src="<?= base_url('assets/img-css/regis1.png')?>" style="width: 350px;margin : 0px 0 0 290px;">
                             <h2>As a FREE member you can:</h2>
                                 <div class="list">
                                     <ul class="signup-lists">
@@ -125,7 +125,7 @@
                                 </tr>
                                 <tr>
                                     <td class="" >
-                                        <p class="pw-meter-inline-text" style="margin : 30px 0 0 190px;font-size: 12px;">
+                                        <p class="pw-meter-inline-text" style="margin : 30px 0 0 290px;font-size: 12px;">
                                             Keep your account safe by using a strong password. Including uppercase and lowercase letters, 
                                             as well as numbers and symbols, can help make a password stronger. 
                                             <a href="#" class="password-stength-tips" onclick="PasswordInfo.showInfoModal();if (window.event) event.cancelBubble = true;return false;">More information</a>
@@ -135,14 +135,14 @@
                                 <tr>
                                     <td class="">
                                     <!-- top: 275px; -->
-                                        <label style="color: #53625E;font-size: 12px;font-weight: bold;margin : 0 0 0 250px;font-family: Verdana, Arial, sans-serif;">Date of Birth</label>
-                                        <a href="#" style="color: #3B5A4A;font-size: 9px;position: absolute;top: 275px;left: 315px;">Why is this required?</a>                        
-                                        <label class="gender" style="color:#53625E;font-size: 12px;font-weight: bold;font-family: Verdana, Arial, sans-serif;">Sex</label>                                   
+                                        <label style="color: #53625E;font-size: 12px;font-weight: bold;margin : 0 0 0 288px;font-family: Verdana, Arial, sans-serif;">Date of Birth</label>
+                                        <a href="#" style="color: #3B5A4A;font-size: 9px;position: absolute;top: 275px;left: 415px;">Why is this required?</a>                        
+                                        <label class="gender" style="color:#53625E;font-size: 12px;font-weight: bold;font-family: Verdana, Arial, sans-serif;position: relative; left: 225px;">Sex</label>                                   
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select style="font-size: 12px;font-weight: bold;margin : 0 0 0 190px;">            
+                                        <select style="font-size: 12px;font-weight: bold;margin : 0 0 0 288px;">            
                                             <option value="">Month</option>
                                             <option value="1">January</option>
                                             <option value="2">February</option>
@@ -324,7 +324,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="" style="margin : 30px 0 0 190px;font-size: 12px;"><input type="checkbox" class="icheckbox" id="agreeterms" name="agreeterms[]" value="1" data-sigil="click-event-tracker" data-meta="0.0">
+                                        <label for="" style="margin : 30px 0 0 290px;font-size: 12px;"><input type="checkbox" class="icheckbox" id="agreeterms" name="agreeterms[]" value="1" data-sigil="click-event-tracker" data-meta="0.0">
                                         I have read and agree to the DeviantArt 
                                         <a href="https://about.deviantart.com/policy/service/" target="blank" class="u">Terms of Service</a>
                                         and
