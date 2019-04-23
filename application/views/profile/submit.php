@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="CSS/submit.css">
-
     <title>DeviantArt - Discover The Largest Online Art Gallery and Community</title>
     
   </head>
@@ -56,7 +54,6 @@
 	</div>
 	<div id="btn-upload">
         <form method="POST" id="btn-upload" enctype="multipart/form-data" action="<?= base_url("index.php/Upload/aksi_upload")?>"> 
-		<form id="btn-upload">
 			<input type="hidden" name="action" value="StashPost" id="INPUT_8"/> <a id="A_9"> <span id="SPAN_27">Choose a file to upload</span>
 				<input type="file" name="file" id="INPUT_11" /></a>
 			<input type="hidden" name="folder_name" value="Saved Submissions" id="INPUT_12" />
@@ -72,10 +69,9 @@
 		 <a href="#" id="A_15">Select file from Sta.sh</a> <a href="#" id="A_16"><span id="SPAN_28">✎</span> Enter text</a>
 	</div>
 </div>
-<!-- <form id="form-comment" method="post" action="/global/placebo.php"> -->
 <form id="form-comment">
 	
-	<div id="input-text" class="writer selectable no-lub put-art-here ui-droppable empty" contenteditable="true" style="min-height: 64px;">					
+	<div id="input-text" class="writer selectable no-lub put-art-here ui-droppable empty" contenteditable="true" style="min-height: 64px;">					</div>
 </form>		
 <div id="download">
 	<input type="checkbox" value="1" name="ile-feature-checkbox" checked="checked" id="INPUT_2" />
@@ -89,10 +85,5 @@
 	</div>
 </div>																																					
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

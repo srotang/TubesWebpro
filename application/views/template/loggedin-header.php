@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#">MORE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url('')?>"><button class='btn tombolsubmit'>SUBMIT</button></a>
+                  <a class="nav-link" href="<?=base_url('index.php/profile/submit');?>"><button class='btn tombolsubmit'>SUBMIT</button></a>
                 </li>
               </ul>
               <ul class="navbar-nav make-it-right">
