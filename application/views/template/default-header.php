@@ -11,7 +11,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
-            <a class="navbar-brand" href="#"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
+            <a class="navbar-brand" href="<?=base_url('index.php/home')?>"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >
               <ul class="navbar-nav mr-auto">

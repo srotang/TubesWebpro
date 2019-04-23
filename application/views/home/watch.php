@@ -40,7 +40,7 @@
             <div class="card-header">
                 <a class="card-title card-title-profile" href="#">
                     <!-- Foto Profil Poster, Username -->
-                    <img class="profile-ph" src="img-examples/c49.jpg">&nbsp;username3
+                    <img class="profile-ph" src="img-examples/c49.jpg">&nbsp;<?=$this->session->userdata('username')?>
                 </a>
                 <small class="text-muted floated-date">
                     <div class="btn-group">
@@ -65,7 +65,7 @@
                 </small>
             
             </div>
-            <div class="the-content-image"><center><img src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png" class="card-img-top content-image" alt="..."></center></div>
+            <div class="the-content-image"><center><img src="<?=base_url('assets/upload/capture')?>" class="card-img-top content-image" alt="..."></center></div>
             <div class="card-body">
                 <h5 class="status-title">
                     <!-- Title Post -->

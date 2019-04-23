@@ -6,12 +6,12 @@
         
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <link rel="stylesheet" href="css/navbar-dev.css">
+            <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/navbar-dev.css">
             <title></title>
     </head>
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
-        <a class="navbar-brand" href="#"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
+        <a class="navbar-brand" href="<?=base_url('index.php/Loggedin')?>"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >
               <ul class="navbar-nav mr-auto">
@@ -42,9 +42,9 @@
                         <!-- Tambahin Username orang yang login --><?php echo  $this->session->userdata('username') ?>
                       </button>
                       <div class="profile-dropdown-content dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item prf" href="#" >Profile</a><!-- Tambahin link ke profie user -->
+                        <a class="dropdown-item prf" href="<?= base_url('index.php/Profile')?>" >Profile</a><!-- Tambahin link ke profie user -->
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item " href="#">Logout</a><!-- ke Logout session -->
+                        <a class="dropdown-item" href="#">Logout</a><!-- ke Logout session -->
                       </div>
                     </div>
                   </li>

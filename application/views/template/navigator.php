@@ -7,13 +7,13 @@
             <div class="" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link browses-active browses" href="#">BROWSE</a>
+                  <a class="nav-link browses-active browses" href="<?= base_url('index.php/home')?>">BROWSE</a>
                 </li>
                 <li class="nav-item">
                   <img class="strokee" src=<?= base_url("assets/img-css/fixednav-stroke.png")?> width="22px" height="41px">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link browses" href="#">WATCH</a>
+                    <a class="nav-link browses" href="<?= base_url('index.php/Watch')?>">WATCH</a>
                 </li>
                 <li class="nav-item browses">
                     <a class="nav-link browses" href="#">NOTIFICATION</a>

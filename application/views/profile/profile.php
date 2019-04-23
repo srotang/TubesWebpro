@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <link rel="stylesheet" href="css/watch-styles.css">
+       <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/watch-styles.css">
         <title>
 
         </title>
-        <link rel="stylesheet" href="css/profile-dev.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/profile-dev.css">
     </head>
     <body>
         <div class="header-profile">

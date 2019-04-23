@@ -19,7 +19,7 @@ class M_akun extends CI_model
 	{
 		$this->db->insert('deviants',$foto);
 	}
-	public function hapusDatadeviants($email)
+	public function hapusDatadeviants($id)
 	{
 		//use query builder to delete data based on email 
 		return $this->db->delete('deviants', array('email' => $email));
