@@ -10,8 +10,8 @@
             <title></title>
     </head>
     <body>
-        <nav class="navbar navbar-expand navbar-dark uppernav d-flex">
-            <a class="navbar-brand" href="#"><img src="logo-mark.png"><img src="logo-type.png"></a>
+        <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
+        <a class="navbar-brand" href="#"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >
               <ul class="navbar-nav mr-auto">
@@ -39,7 +39,7 @@
                     <div class="profile-dropdown">
                       <button class="profile-dropbtn">
                           <img class="avatar" src="https://a.deviantart.net/avatars/default.gif" width="20" height="20" alt="">
-                        <!-- Tambahin Username orang yang login -->Username
+                        <!-- Tambahin Username orang yang login --><?php echo  $this->session->userdata('username') ?>
                       </button>
                       <div class="profile-dropdown-content dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item prf" href="#" >Profile</a><!-- Tambahin link ke profie user -->

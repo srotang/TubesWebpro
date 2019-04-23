@@ -1,6 +1,6 @@
 <?php
 
-class Home extends CI_Controller{
+class Loggedin extends CI_Controller{
 	public function index(){
 		$this->load->view('template/loggedin-header');
 		$this->load->view('template/navigator');
