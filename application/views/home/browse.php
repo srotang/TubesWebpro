@@ -97,29 +97,8 @@
             </div>
         </div>
         <div class="content">
-        <div class="content-link-container">
-                                        <a href="#" class="content-link">
-                                            <div class="content-galls">
-                                                <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                                            </div>
-                                            <div class="content-link-details">
-                                                    <h5>Title</h5>
-                                                    <div class="form-inline">
-                                                        <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                                </div>
-                                            </div>
-                                        </a>
+   
                                     </div>
-        <?php foreach($content as $row){ ?>
-        <div>
-        <h2><?= $row->judul?></h2>
-        <?= $row->isi?> </br>
-        <?= $row->timestamp?>
-        <a href= "<?php echo base_url('Mydiary/editentry/').$row->id_entry?>" class="btn btn-primary">
-Edit</a>
-
- </div>
-<?php } ?> 
-        </div>
+     
   </body>
 </html>
