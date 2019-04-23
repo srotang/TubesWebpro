@@ -1,0 +1,212 @@
+.watch-stats{
+    margin-top:35px;
+    margin-bottom:25px;
+}
+
+.stats-element{
+    width:150px;
+    text-align: center;
+}
+
+.stats-element .stats{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin:auto;
+}
+
+.stats .stat-label{
+    font-size:12px;
+    font-weight:700;
+}
+
+.stats .numbers{
+    padding-left:5px;
+    font-size:28px;
+    line-height: 31px;
+}
+
+.recomendation-card{
+    width:60%;
+    margin:auto;
+    border-radius: 0px;
+    box-shadow: 0.5px 0.5px 2px #888888;
+}
+
+.header-text{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size:25px;
+    color:black;
+}
+
+.header2-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color:white;
+}
+
+.recomendation-card .card-header{
+    background: url(img-css/promo.png) no-repeat right top;
+    background-size: 40%;
+    background-color:#04cc46;
+}
+
+.card-body a{
+    font-size:17px;
+    font-weight:700;
+    text-decoration: none;
+    color:#477085;
+}
+
+.users-content{
+    height:220px;
+    margin-top:10px;
+}
+
+.users-content .content-photo{
+    box-shadow: 1px 1px 5px #888888;
+    margin-right:5px;
+}
+
+.watch-button{
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height:26px;
+    color:#337287;
+    border: 1px solid #9CAD9C;
+    padding: 0 10px 0px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:90px;
+}
+
+.watch-logo{
+    height:12px;
+    width:12px;
+    background: url(img-css/plus-watch.png) no-repeat left;
+    background-size: 12px;
+    margin-right:2px;
+    margin-top:6px;
+    float:left;
+}
+
+.watch-btn-active{
+    background-color:#bfe97c;
+    width:110px;
+}
+
+.watch-btn-active .watch-logo{
+    background: url(img-css/check.png) no-repeat left;
+    background-size: 12px;
+}
+
+.profile-ph{
+    object-fit: cover;
+    width:30px;
+    height:30px;
+}
+
+.status-card{
+    width:60%;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:30px;
+    border-radius:0px;
+    border:none;
+}
+
+.floated-date{
+    float:right;
+}
+
+.btn-submit-comment{
+    float:right;
+    margin-right:10px;
+}
+
+.comment-input{
+    border: 1px solid #9CAD9C;
+    height:40px;
+    width:500px;
+    border-radius: 2px;
+    margin-left:10px;
+    margin-right:10px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s; 
+}
+
+.comment-input:focus{
+    height:80px;
+}
+.form-comment{
+    margin-bottom:40px;
+}
+
+.card{
+    background-color:#eef5eb;
+    border-radius:2px;
+    box-shadow: 0.5px 0.5px 2px #888888;
+}
+
+.status-card .card-title{
+    font-size:17px;
+    font-weight:700;
+    text-decoration: none;
+    color:#477085;
+}
+
+.status-title{
+    font-size:24px;
+    color:black;
+    font-weight:700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-img-top{
+
+    background-color:white;
+}
+
+.comment-text{
+    width:70%;
+    float:left;
+    margin-top:5px;
+}
+
+.commentor-profile{
+    float:left;
+    height:70px;
+    margin-right:20px;
+}
+
+.the-comments{
+    margin-bottom:25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:12px;
+}
+
+.the-comments .commentor-profile{
+    font-size:12px;
+}
+
+.the-content-image{
+    background-color:white;
+}
+
+.content-image{
+    max-width: 480px;
+    margin:auto;
+}
+
+.comment-input{
+    margin-top:10px;
+    resize: none;
+}
+
+.status-edit-btn{
+    background-color: rgba(0,0,0,.03);
+    border:none;
+    color:#888888;
+}
+
