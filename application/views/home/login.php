@@ -18,10 +18,10 @@
         background-color : #D8E4D6;
         border: 1px solid #D8E4D6;
         position: absolute;
-        top: 80px;
+        top: 100px;
         height : 180px;
         width : 460px;
-        margin : 20px 359px 20px 359px;
+        margin : 20px 359px 20px 379px;
         padding : 20px 20px 20px 20px;
         font-size: 12px;
         transform : none;
