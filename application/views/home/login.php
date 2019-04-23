@@ -11,6 +11,11 @@
     body{
         background-color : #CDD8C8;
     }
+    
+    .container-form-login{
+        width:100%;
+        background-color:cyan;
+    }
     .form-login{
         background-color : #D8E4D6;
         border: 1px solid #D8E4D6;
