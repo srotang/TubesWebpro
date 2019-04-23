@@ -6,8 +6,6 @@
   .container-form-login{
     width:100%;
   }
-
-
     body{
         background-color : #CDD8C8;
     }
