@@ -41,18 +41,32 @@
       font-weight: bold;
     }
     .table-sign input{
-      heigth: 20px;
-      width : 85px;
-      border : 1px solid  #1D4253;
-      margin : 8px 0 8px 0;
-      padding : 3px 3px 4px 4px;
-      background-color :#1D4253;
-      border-top-left-radius : 5px;
-      border-top-right-radius : 5px;
-      border-bottom-left-radius : 5px;
-      border-bottom-right-radius : 5px;
-      cursor : pointer;
-      color: white;
+      box-shadow: rgb(241, 245, 239) 0px 1px 0px 0px;
+      color: rgb(255, 255, 249);
+      cursor: pointer;
+      height: 26.6667px;
+      min-width: 85px;
+      text-align: center;
+      text-decoration: none solid rgb(255, 255, 249);
+      white-space: pre;
+      width: 85px;
+      column-rule-color: rgb(255, 255, 249);
+      align-items: flex-start;
+      perspective-origin: 42.5px 13.3333px;
+      transform-origin: 42.5px 13.3333px;
+      user-select: none;
+      caret-color: rgb(255, 255, 249);
+      background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(0, 136, 181), rgb(0, 93, 124)) repeat scroll 0% 0% / auto padding-box border-box;
+      border: 1px solid rgb(29, 66, 83);
+      border-radius: 5px 5px 5px 5px;
+      border-spacing: 4.66667px 4.66667px;
+      font: normal normal 400 normal 11px / normal Arial;
+      margin: 8px 0px;
+      outline: rgb(255, 255, 249) none 0px;
+      padding: 6px 10px;
+    }
+    .table-sign input:hover{
+      background: -webkit-linear-gradient(top, #00a4c6, #00739a);
     }
     </style>
   </head>
