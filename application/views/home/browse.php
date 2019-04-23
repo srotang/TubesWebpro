@@ -103,7 +103,7 @@
             </div>
         </div>
         <div class="content">
-            <img src="<?= base_url('assets/upload')?>" alt="">
+            <img src="" alt="">
         </div>
 
     <!-- Optional JavaScript -->
