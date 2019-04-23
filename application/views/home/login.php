@@ -1,18 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-<<<<<<< HEAD
-    
-    <title>Log In | DeviantArt</title>
-=======
->>>>>>> b58a4b5dc519e9664c424be858db9257f6a1c423
 
     <style>
-  .container-form-login{
-    width:100%;
-  }
     body{
         background-color : #CDD8C8;
+    }
+    
+    .container-form-login{
+        width:100%;
+        background-color:cyan;
     }
     .form-login{
         background-color : #D8E4D6;
@@ -21,11 +18,8 @@
         top: 100px;
         height : 180px;
         width : 460px;
-<<<<<<< HEAD
-=======
         margin : 20px 359px 20px 379px;
         margin:auto;
->>>>>>> b58a4b5dc519e9664c424be858db9257f6a1c423
         padding : 20px 20px 20px 20px;
         font-size: 12px;
         transform : none;
@@ -80,11 +74,7 @@
   </head>
   <body>
     <?= $this->session->flashdata("sukses")?>
-<<<<<<< HEAD
-    <center>
-=======
     <div class="container-form-login">
->>>>>>> b58a4b5dc519e9664c424be858db9257f6a1c423
     <form class="form-login" action="<?= base_url('index.php/Login/asup') ?>" method="post">
         <table class="tale-form-login">
           <tbody style="position: absolute; left: 70px">
@@ -118,12 +108,8 @@
           </tbody>
         </table>
       </form>
-<<<<<<< HEAD
-  </center>
-=======
       </div>
     <tr class="footer-page" <?= base_url('template/footer')?>></tr>
->>>>>>> b58a4b5dc519e9664c424be858db9257f6a1c423
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 </body>
