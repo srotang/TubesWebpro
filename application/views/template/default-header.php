@@ -39,7 +39,7 @@
                       <a href="<?= base_url('index.php/register')?>" class="nav-link">Join</a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" class="nav-link">Login</a>
+                      <a href="<?= base_url('index.php/login')?>" class="nav-link">Login</a>
                   </li>
               </ul>
             </div>
