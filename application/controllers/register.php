@@ -11,8 +11,9 @@
      }
  
      public function index() {
- 
-         $this->load->view('home/register');
+        $this->load->view('template/default-header');
+        $this->load->view('home/register');
+        $this->load->view('template/footer');
      }
 
      public function daftarRegister(){
