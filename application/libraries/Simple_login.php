@@ -33,7 +33,7 @@
              $this->CI->session->set_userdata('id', $id);
  
              //redirect ke halaman dashboard
-             redirect('index.php/Home');
+             redirect('index.php/Loggedin');
          }else{
  
              //jika tidak ada, set notifikasi dalam flashdata.

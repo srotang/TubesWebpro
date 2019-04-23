@@ -24,7 +24,6 @@
             $this->load->view('home/register');
             echo $this->input->post('email');
         }else{
-
             //$data['nama']   =    $this->input->post('name');
             $data['username'] =    $this->input->post('cusername');
             $data['email']  =    $this->input->post('email1');

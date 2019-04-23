@@ -1,0 +1,27 @@
+.hoverWrapper #hoverShow1 {
+  display: none;
+  position: absolute;
+  background-color: #ff0000;
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  top: 100px;
+}
+
+.hoverWrapper:hover #hoverShow1 {
+  display: block;
+}
+
+.hoverWrapper #hoverShow2 {
+  display: none;
+  position: absolute;
+  background-color: #00ff00;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 200px;
+}
+
+.hoverWrapper:hover #hoverShow2 {
+  display: block;
+}
