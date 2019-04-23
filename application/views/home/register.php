@@ -18,8 +18,9 @@
         font-family : Verdana, sans-serif;
         font-size : 14px;
         color :  #52615D;
-        list-style: url("assets/img-css/signup-star.png");
+        list-style: url("<?= base_url();?>assets/img-css/signup-star.png");
         margin : 10px 0 0 180px;
+
     }
     h2{
         font-family : Verdana, sans-serif;
