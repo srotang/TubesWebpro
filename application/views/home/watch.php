@@ -6,7 +6,7 @@
         
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <link rel="stylesheet" href="css/watch-styles.css">
+            <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/watch-styles.css">
         <title>
             Watch
         </title>
@@ -127,7 +127,7 @@
                               <img class="profile-ph" src="img-examples/maxresdefault.jpg">&nbsp;username2
                           </a>
                           <!-- Button watch -->
-                          <button class="watch-button"><img class="watch-logo" src="css/img-css/plus-watch.png" height="12px">&nbsp;Watch</button>
+                          <button class="watch-button"><img class="watch-logo" src="<?= base_url(); ?>/assets/img-css/plus-watch.png" height="12px">&nbsp;Watch</button>
                           <div class="users-content">
                               <!-- Content deviants, contentnya maks 3 aja yang ditampilin -->
                                 <img class="content-photo" src="img-examples/the_avengers_by_flowmediaproductions_d7ibyms.png" height="200px">
@@ -136,7 +136,7 @@
                         <div class="card-body">
                               <!-- Foto Profil Deviants, Username -->
                           <a class="card-title" href="#"><img class="profile-ph" src="img-examples/c49.jpg">&nbsp;username3</a>
-                          <!-- Button watch --><button class="watch-button"><img class="watch-logo" src="css/img-css/plus-watch.png" height="12px">&nbsp;Watch</button>
+                          <!-- Button watch --><button class="watch-button"><img class="watch-logo" src="<?= base_url(); ?>/assets/img-css/plus-watch.png" height="12px">&nbsp;Watch</button>
                           <div class="users-content">
                               
                               <!-- Content deviants, contentnya maks 3 aja yang ditampilin -->
