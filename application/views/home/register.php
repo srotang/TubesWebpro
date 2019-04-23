@@ -94,7 +94,7 @@
             <div class="row">
                 <div class="col-md-8 col">
                     <form class="form-regis" action="<?= base_url('index.php/register/daftarRegister')?>" method="post">
-                        <table style="position: absolute;left: 35px;">
+                        <table style="" border="1">
                             <tbody>
                                 <tr>
                                     <td class="table-label">
@@ -132,9 +132,9 @@
                                 <tr>
                                     <td class="">
                                     <!-- top: 275px; -->
-                                        <label style="color: #53625E;font-size: 12px;font-weight: bold;margin : 0 0 0 190px;font-family: Verdana, Arial, sans-serif;">Date of Birth</label>
+                                        <label style="color: #53625E;font-size: 12px;font-weight: bold;margin : 0 0 0 250px;font-family: Verdana, Arial, sans-serif;">Date of Birth</label>
                                         <a href="#" style="color: #3B5A4A;font-size: 9px;position: absolute;top: 275px;left: 315px;">Why is this required?</a>                        
-                                        <label class="gender" style="color:#53625E;font-size: 12px;font-weight: bold;position: absolute;top: 275px;left: 508px;font-family: Verdana, Arial, sans-serif;">Sex</label>                                   
+                                        <label class="gender" style="color:#53625E;font-size: 12px;font-weight: bold;font-family: Verdana, Arial, sans-serif;">Sex</label>                                   
                                     </td>
                                 </tr>
                                 <tr>
