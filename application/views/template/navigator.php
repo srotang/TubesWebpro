@@ -14,13 +14,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link browses" href="<?= base_url('index.php/Watch')?>">WATCH</a>
-                </li>
-                <li class="nav-item browses">
-                    <a class="nav-link browses" href="#">NOTIFICATION</a>
-                </li>
-                <li class="nav-item browses">
-                    <a class="nav-link browses" href="#">NOTES</a>
-                </li>
+              </li>
               </ul>
             </div>
           </nav>

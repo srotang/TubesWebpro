@@ -52,6 +52,7 @@
      public function cek_login() {
  
          //cek session username
+    
          if($this->CI->session->userdata('username') == '') {
  
              //set notifikasi

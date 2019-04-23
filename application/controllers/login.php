@@ -23,4 +23,8 @@ class Login extends CI_Controller{
 			$this->simple_login->login($username,$password);
 		}
 	}
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('index.php/home');
+	}
 }

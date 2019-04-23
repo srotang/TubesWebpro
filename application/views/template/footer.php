@@ -4,6 +4,8 @@
 
     <style>
     .footer-page{
+        clear:both;
+        margin-top:100px;
         background-color :#4E5F55;
         
                 <div class="col-md-1">

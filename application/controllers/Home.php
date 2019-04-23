@@ -1,10 +1,22 @@
 <?php
 
 class Home extends CI_Controller{
+	function __construct(){
+		parent::__construct();	
+		$this->load->library('simple_login');
+		
+		$this->CI =& get_instance();
+	}
 	public function index(){
-		$this->load->view('template/default-header');
+		if( $this->CI->session->userdata('username') == '' ){
+			$this->load->view('template/default-header');
+		}
+		else {
+			$this->load->view('template/loggedin-header');
+		}
 		$this->load->view('template/navigator');
 		$this->load->view('home/browse');
 		$this->load->view('template/footer');
 	}
+
 }

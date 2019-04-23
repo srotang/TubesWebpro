@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#">MORE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><button class='btn tombolsubmit'>SUBMIT</button></a>
+                  <a class="nav-link" href="<?=base_url('')?>"><button class='btn tombolsubmit'>SUBMIT</button></a>
                 </li>
               </ul>
               <ul class="navbar-nav make-it-right">
@@ -44,7 +44,7 @@
                       <div class="profile-dropdown-content dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item prf" href="<?= base_url('index.php/Profile')?>" >Profile</a><!-- Tambahin link ke profie user -->
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a><!-- ke Logout session -->
+                        <a class="dropdown-item" href="<?= base_url('index.php/login/logout')?>">Logout</a><!-- ke Logout session -->
                       </div>
                     </div>
                   </li>
