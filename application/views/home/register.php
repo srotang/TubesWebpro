@@ -18,7 +18,7 @@
         font-family : Verdana, sans-serif;
         font-size : 14px;
         color :  #52615D;
-        list-style: url("<?= base_url();?>assets/img-css/signup-star.png");
+        list-style:<?php base_url("assets/img-css/signup-star")?>;
         margin : 10px 0 0 180px;
 
     }
@@ -56,7 +56,7 @@
         font-weight: bold;
         color :  #53625E;
         }
-    .button input{
+    .btn input{
         border: none;    background-color: #05cc47;
         border-radius: 3px;color: #fff;
         background-image: none;
@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-md-8 col">
                     <form class="form-regis" action="<?= base_url('index.php/register/daftarRegister')?>" method="post">
-                        <table style="" border="1">
+                        <table style="" >
                             <tbody>
                                 <tr>
                                     <td class="table-label">
@@ -333,7 +333,7 @@
                                     </td>
                                 </tr>  
                                 <tr>
-                                    <td class="button" style="margin : 30px 0 0 300px;">
+                                    <td class="btn" style="margin : 30px 0 0 300px;">
                                         <input id="becomeDevButton" class="join-button continue" type="submit" value="BECOME A DEVIANTART" style=";">
                                     </td>
                                 </tr>
