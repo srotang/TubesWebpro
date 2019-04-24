@@ -17,15 +17,17 @@
         font-size: 11px;
         color: white;
         height: 50px;
+        text-align: center;
     }
     </style>
 </head>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 <body>
+<center>
 <footer class="footer-page">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col">
+                <div class="col-md-10 col">
                     <ul class="footer-elements">
                         <li>©2019 DeviantArt. All rights reserved</li>
                         <li>About</li>
@@ -38,5 +40,6 @@
             </div>
         </div>
     </footer>
+</center>
 </body>
 </html>
