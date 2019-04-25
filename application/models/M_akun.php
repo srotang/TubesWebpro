@@ -28,10 +28,12 @@ class M_akun extends CI_model
 		return $this->db->delete('deviants', array('email' => $email));
 	}
 
-	public function getdeviantsById($email)
+	public function getdeviantsById($username)
 	{
-		//get data deviants based on email 
-		return $this->db->get_where('deviants', ['email'=>$email])->row_array();
+		//get data deviants based on username
+		$where = array('username' => $username );
+		$query = $this->db->get_where("deviants",$where);
+		return $query->row_array();
 	}
 
 	public function ubahDatadeviants()
@@ -43,6 +45,19 @@ class M_akun extends CI_model
 			"username"=>$this->input->post('username',true),
 		];
 		$this->db->update('deviants', $data);
+	}
+
+	public function getWatchers($id){
+		$query = $this->db->get_where("watching", array('watching'=> $id));
+		return $query->result_array();
+	}
+
+	public function getdeviantsUsername($id)
+	{
+		//get data deviants based on username
+		$where = array('id_deviants' => $id );
+		$query = $this->db->get_where("deviants",$where);
+		return $query->row_array();
 	}
 }
 ?>

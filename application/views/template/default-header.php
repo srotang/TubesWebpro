@@ -12,7 +12,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
-            <a class="navbar-brand" href="<?=base_url('index.php/home')?>"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
+            <a class="navbar-brand" href="<?=base_url()?>/home"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >
               <ul class="navbar-nav mr-auto">
@@ -31,16 +31,19 @@
                 <li class="nav-item itemlain">
                     <a class="nav-link" href="#">MORE</a>
                 </li>
+<<<<<<< HEAD
                 <li class="nav-item">
                   <a class="nav-link" href="<?= base_url('index.php/submit')?>"><button class='btn tombolsubmit'>SUBMIT</button></a>
                 </li>
+=======
+>>>>>>> 8f01d4ac36da5cda11966a90b4d284388fae7e68
               </ul>
               <ul class="navbar-nav make-it-right">
                   <li class="nav-item">
-                      <a href="<?= base_url('index.php/register')?>" class="nav-link">Join</a>
+                      <a href="<?= base_url()?>/register" class="nav-link">Join</a>
                   </li>
                   <li class="nav-item">
-                      <a href="<?= base_url('index.php/login')?>" class="nav-link">Login</a>
+                      <a href="<?= base_url()?>/login" class="nav-link">Login</a>
                   </li>
               </ul>
             </div>

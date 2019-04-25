@@ -22,10 +22,12 @@ class Login extends CI_Controller{
 		$valid->set_rules('password1','password1','required');
 		if($valid->run()){
 			$this->simple_login->login($username,$password);
+
+			redirect('index.php/Home');
 		}
 	}
 	public function logout(){
 		$this->session->sess_destroy();
-		redirect('index.php/home');
+		redirect('home');
 	}
 }

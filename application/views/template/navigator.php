@@ -31,16 +31,16 @@
             <div class="" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link browses-active browses" href="<?= base_url('index.php/home')?>">BROWSE</a>
+                  <a class="nav-link browses-active browses" href="<?= base_url()?>/home">BROWSE</a>
                 </li>
                 <li class="nav-item">
                   <img class="strokee" src=<?= base_url("assets/img-css/fixednav-stroke.png")?> width="22px" height="41px">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link browses" href="<?= base_url('index.php/Watch')?>">WATCH</a>
+                    <a class="nav-link browses" href="<?= base_url()?>/Watch">WATCH</a>
               </li>
               <li class="nav-item" id="back-to-top">
-                  <input id="back-to-top-icon" type="Image" src="<?= base_url('assets/img-css/icon.jpg')?>" style="height:20px;position: relative; top: 8px;right: 5px;">Top
+                  <input onclick="topFunction()" id="back-to-top-icon" type="Image" src="<?= base_url('assets/img-css/icon.jpg')?>" style="height:20px;position: relative; top: 8px;right: 5px;">Top
               </ul>
             </div>
           </nav>
@@ -63,6 +63,7 @@
                 }
               }
       </script>
+<<<<<<< HEAD
       <script>
         $(document).ready(function(){
                 $(window).scroll(function(){
@@ -77,5 +78,25 @@
                 });
               });
         </script>
+=======
+       <script>
+      // $(document).ready(function(){
+      //         $(window).scroll(function(){
+      //           if($(this).scrollTop() > 40){
+      //             $('#back-to-top').fadeIn();
+      //           }else{
+      //             $('#back-to-top').fadeOut();
+      //           }
+      //         });
+      //         $("#back-to-top").click(function(){
+      //           $('html ,body').animate({scrollTop : 0}, 700);
+      //         });
+      //       });
+      function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+          </script> 
+>>>>>>> 8f01d4ac36da5cda11966a90b4d284388fae7e68
     </body>
 </html>

@@ -52,7 +52,7 @@
 		or
 	</div>
 	<div id="btn-upload">
-        <form method="POST" id="btn-upload" enctype="multipart/form-data" action="<?= base_url("index.php/Upload/aksi_upload")?>"> 
+        <form method="POST" id="btn-upload" enctype="multipart/form-data" action="<?= base_url()?>/Upload/aksi_upload"> 
 			<input type="hidden" name="action" value="StashPost" id="INPUT_8"/> <a id="A_9"> <span id="SPAN_27">Choose a file to upload</span>
 				<input type="file" name="file" id="INPUT_11" /></a>
 			<input type="hidden" name="folder_name" value="Saved Submissions" id="INPUT_12" />

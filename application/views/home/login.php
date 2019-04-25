@@ -78,7 +78,7 @@
   <body>
     <?= $this->session->flashdata("sukses")?>
     <center>
-    <form class="form-login" action="<?= base_url('index.php/Login/asup') ?>" method="post">
+    <form class="form-login" action="<?= base_url() ?>/Login/asup" method="post">
         <table class="tale-form-login">
           <tbody style="">
             <tr>

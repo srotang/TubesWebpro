@@ -17,8 +17,9 @@
          
          //cek username dan password
          $query = $this->CI->db->get_where('deviants',array('username'=>$username,'password' => md5($password)));
-         
+
          if($query->num_rows() == 1) {
+             $deviants  = $query->row_array();
              //ambil data user berdasar username
              $this->CI->db->select('id_deviants,nama, username,email');
              $this->CI->db->from('deviants');
@@ -26,21 +27,23 @@
              $row = $this->CI->db->get();
              $admin     = $row->row();
              $id   = $admin->id_deviants;
+             $profile_pic = $deviants['fotoProfile'];
  
              //set session user
              $this->CI->session->set_userdata('username', $username);
              $this->CI->session->set_userdata('id_login', uniqid(rand()));
+             $this->CI->session->set_userdata('pic', $profile_pic);
              $this->CI->session->set_userdata('id', $id);
  
              //redirect ke halaman dashboard
-             redirect('index.php/Loggedin');
+             redirect('Loggedin');
          }else{
  
              //jika tidak ada, set notifikasi dalam flashdata.
              $this->CI->session->set_flashdata('sukses','Username atau password anda salah, silakan coba lagi.. ');
  
              //redirect ke halaman login
-             redirect('index.php/Login');
+             redirect('Login');
          }
           return false;
       }

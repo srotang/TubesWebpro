@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col">
-                    <form class="form-regis" action="<?= base_url('index.php/register/daftarRegister')?>" method="post">
+                    <form class="form-regis" action="<?= base_url()?>/register/daftarRegister" method="post">
                         <table style="" >
                             <tbody>
                                 <tr>
