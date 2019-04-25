@@ -12,6 +12,7 @@ class Login extends CI_Controller{
 
 	function index(){
 		$this->load->view('home/login');
+		$this->load->view('template/footer');
 	}
 	public function asup(){
 		$valid = $this->form_validation;

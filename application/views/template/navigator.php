@@ -63,19 +63,19 @@
                 }
               }
       </script>
-      <!-- <script>
-      $(document).ready(function(){
-              $(window).scroll(function(){
-                if($(this).scrollTop() > 40){
-                  $('#backToTop').fadeIn();
-                }else{
-                  $('#backToTop').fadeOut();
-                }
+      <script>
+        $(document).ready(function(){
+                $(window).scroll(function(){
+                  if($(this).scrollTop() > 40){
+                    $('#back-to-top-icon').fadeIn();
+                  }else{
+                    $('#back-to-top-icon').fadeOut();
+                  }
+                });
+                $("#back-to-top-icon").click(function(){
+                  $('html ,body').animate({scrollTop : 0}, 700);
+                });
               });
-              $("#backToTop").click(function(){
-                $('html ,body').animate({scrollTop : 0}, 700);
-              });
-            });
-          </script> -->
+        </script>
     </body>
 </html>
