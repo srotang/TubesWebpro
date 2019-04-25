@@ -39,10 +39,10 @@
                     <div class="profile-dropdown">
                       <button class="profile-dropbtn">
                           <img class="avatar" src="https://a.deviantart.net/avatars/default.gif" width="20" height="20" alt="">
-                        <!-- Tambahin Username orang yang login --><?php echo  $this->session->userdata('username') ?>
+                        <!-- Tambahin Username orang yang login --><?= $this->session->userdata('username') ?>
                       </button>
                       <div class="profile-dropdown-content dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item prf" href="<?= base_url('index.php/Profile')?>" >Profile</a><!-- Tambahin link ke profie user -->
+                        <a class="dropdown-item prf" href="<?= base_url(); ?>index.php/Profile/profile/<?= $this->session->userdata('username') ?>" >Profile</a><!-- Tambahin link ke profie user -->
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="<?= base_url('index.php/login/logout')?>">Logout</a><!-- ke Logout session -->
                       </div>
