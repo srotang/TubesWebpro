@@ -11,7 +11,7 @@
                         
                         <div class="dropdown">
                                 <a class="btn btn-secondary edit-profile-pic" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="profile-ph" src="<?php echo base_url();?>/assets/profile/<?= $deviant['fotoProfile']; ?>">
+                                    <img class="profile-ph" src="<?= base_url()?>/assets/profile/<?= $deviant['fotoProfile']; ?>">
                                 </a>
                               
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -37,7 +37,7 @@
         <div class="menu-prof">
             <ul class="navigation-prof">
                 <li class="element-nav-pr   link-an-active">
-                    <a class="link-an-menu" href=""><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
+                    <a class="link-an-menu" href="<?= base_url()?>/profile/<?= $_SESSION['username']?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
                 </li>
                 <li class="element-nav-pr">
                     <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
@@ -65,8 +65,8 @@
                                         <?php } ?>
                                     </ul>
                                     <div class="button-group btn-gr-newdev">
-                                        <a href="#" class="btn btn-light newdev-btn nebtn-gall">Browse Gallery</a>
-                                        <a href="#" class="btn btn-primary newdev-btn nebtn-submit">Submit art</a>
+                                        <a href="<?=base_url()?>profile/gallery" class="btn btn-light newdev-btn nebtn-gall">Browse Gallery</a>
+                                        <a href="<?=base_url()?>profile/submit" class="btn btn-primary newdev-btn nebtn-submit">Submit art</a>
                                     </div>
                                 </div>
                             </div>
