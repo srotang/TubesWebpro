@@ -6,6 +6,7 @@ class Home extends CI_Controller{
 		$this->load->library('simple_login');
 		
 		$this->CI =& get_instance();
+		$this->load->model('M_foto');
 	}
 	public function index(){
 		if( $this->CI->session->userdata('username') == '' ){
@@ -17,9 +18,7 @@ class Home extends CI_Controller{
 		// $this->load->view('template/navigator');
 		// $this->load->view('home/browse');
 		// $this->load->view('template/footer');
-		
-		$this->load->model('M_foto');
-		$data['contents']=$this->M_foto->getAllfoto();
+		$data['contents']=$this->M_foto->getAllfotoAndCreator();
 		$this->load->view('template/navigator');
 		$this->load->view('home/browse',$data);
 		$this->load->view('template/footer');

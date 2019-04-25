@@ -28,7 +28,7 @@
                               </div>
                     </td>
                     <td>
-                        <a class="user-link-prof" href="#"><?= $deviant['username']; ?></a>
+                        <a class="user-link-prof" href="#">&nbsp;<?= $deviant['username']; ?></a>
                     </td>
                 </tr>
             </table>
@@ -37,10 +37,17 @@
         <div class="menu-prof">
             <ul class="navigation-prof">
                 <li class="element-nav-pr   link-an-active">
+<<<<<<< HEAD
                     <a class="link-an-menu" href="<?= base_url(); ?>index.php/Profile/profile/<?= $this->session->userdata('username') ?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
                 </li>
                 <li class="element-nav-pr">
                     <a class="link-an-menu" href="<?= base_url(); ?>index.php/Profile/gallery/<?= $this->session->userdata('username') ?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
+=======
+                    <a class="link-an-menu" href="<?= base_url()?>/Profile/profile/<?= $deviant['username'] ?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
+                </li>
+                <li class="element-nav-pr">
+                    <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery/<?= $deviant['username'] ?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
+>>>>>>> 342af09d194e90946c4153dbc5b3e1ff896309b8
                 </li>
             </ul> 
         </div>
@@ -61,7 +68,7 @@
                                             <img class="deviations-pr" src="<?php echo base_url();?>assets/upload/<?= $cont['content_dir']; ?>">
                                         </li>
                                             <?php $i++; ?>
-                                            <?php if($i > 2) {break;} ?>
+                                            <?php if($i > 1) {break;} ?>
                                         <?php } ?>
                                     </ul>
                                     <div class="button-group btn-gr-newdev">

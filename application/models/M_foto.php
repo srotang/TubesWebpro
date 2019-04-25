@@ -6,7 +6,13 @@ class M_foto extends CI_model
 	public function getAllfoto()
 	{
 		//use query builder to get data table "foto"
-		return $this->db->get('contents')->result();
+		return $this->db->get('contents')->result_array();
+	}
+
+	public function getAllfotoAndCreator(){
+		$text = "SELECT deviants.username as username, deviants.fotoProfile as fotoProfile, contents.content_dir as content_dir, contents.content_title as content_title From contents INNER JOIN deviants on deviants.id_deviants=contents.id_deviants";
+		$query = $this->db->query($text);
+		return $query->result_array();
 	}
 
 	public function getuserContent($id){
