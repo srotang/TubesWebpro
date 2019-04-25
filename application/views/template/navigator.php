@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <style>
+    #back-to-top {
+    bottom: 0.333333px;
+    color: rgb(152, 170, 150);
+    cursor: pointer;
+    height: 35px;
+    left: 960px;
+    position: relative;
+    /* float: right; */
+    text-decoration: none solid rgb(152, 170, 150);
+    text-rendering: optimizelegibility;
+    /* margin-top: 5px; */
+    white-space: nowrap;
+    width: 47.5729px;
+    column-rule-color: rgb(152, 170, 150);
+    perspective-origin: 28.7813px 17.5px;
+    transform-origin: 28.7865px 17.5px;
+    caret-color: rgb(152, 170, 150);
+    border: 0px none rgb(152, 170, 150);
+    font: normal normal 400 normal 14px / 35px "Helvetica Neue", Arial, sans-serif;
+    outline: rgb(152, 170, 150) none 0px;
+    padding: 0px 10px 0px 0px;
+    }
+</style>
     </head>
     <body>
         <nav class="navbar navbar-expand navbar-dark fixednav bg-dark" id="myHeader">
@@ -15,6 +39,8 @@
                 <li class="nav-item">
                     <a class="nav-link browses" href="<?= base_url()?>/Watch">WATCH</a>
               </li>
+              <li class="nav-item" id="back-to-top">
+                  <input id="back-to-top-icon" type="Image" src="<?= base_url('assets/img-css/icon.jpg')?>" style="height:20px;position: relative; top: 8px;right: 5px;">Top
               </ul>
             </div>
           </nav>
@@ -37,5 +63,19 @@
                 }
               }
       </script>
+      <!-- <script>
+      $(document).ready(function(){
+              $(window).scroll(function(){
+                if($(this).scrollTop() > 40){
+                  $('#backToTop').fadeIn();
+                }else{
+                  $('#backToTop').fadeOut();
+                }
+              });
+              $("#backToTop").click(function(){
+                $('html ,body').animate({scrollTop : 0}, 700);
+              });
+            });
+          </script> -->
     </body>
 </html>
