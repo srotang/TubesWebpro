@@ -3,7 +3,6 @@
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/profile-dev.css">
     </head>
     <body>
-        <?php echo "<script>console.log('my Stuff')</script>" ?>
         <div class="header-profile">
             <table class="userp">
                 <tr>
@@ -12,7 +11,7 @@
                         
                         <div class="dropdown">
                                 <a class="btn btn-secondary edit-profile-pic" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="profile-ph" src="img-examples/maxresdefault.jpg">
+                                    <img class="profile-ph" src="<?php echo base_url();?>/assets/profile/<?= $deviant['fotoProfile']; ?>">
                                 </a>
                               
                                 <div class="dropdown-menu">
@@ -38,10 +37,10 @@
         <div class="menu-prof">
             <ul class="navigation-prof">
                 <li class="element-nav-pr   link-an-active">
-                    <a class="link-an-menu" href=""><img class="profile-icon" src="css/img-css/info_profile.svg">Profile</a>
+                    <a class="link-an-menu" href=""><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
                 </li>
                 <li class="element-nav-pr">
-                    <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="css/img-css/gallery_icon.png">Gallery</a>
+                    <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
                 </li>
             </ul>
         </div>
@@ -74,10 +73,9 @@
                                 </div>
                                 <div class="card-body">
                                     <ul class="watchers-list">
-                                        <li><a class="watchers" href="#">username1</a></li>
-                                        <li><a class="watchers" href="#">username2</a></li>
-                                        <li><a class="watchers" href="#">username3</a></li>
-                                        <li><a class="watchers" href="#">username4</a></li>
+                                    <?php foreach ($watchers as $wtch){ ?>
+                                        <li><a class="watchers" href="#"><?php echo $wtch; ?></a></li>
+                                    <?php } ?>
                                     </ul>
                                 </div>
                             </div>
@@ -89,12 +87,10 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="devid-pic-cont">
-                                        <img class="deviant-id-pic" src="img-examples/maxresdefault.jpg">
+                                        <img class="deviant-id-pic" src="<?php echo base_url();?>/assets/profile/<?= $deviant['fotoProfile']; ?>">
                                     </div>
                                     <br>
-                                    <a class="card-title" href="#">Username</a>
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a class="card-title" href="#"><?= $deviant['username']; ?></a>
                                 </div>
                             </div>
                 </div>

@@ -17,6 +17,14 @@ class Profile extends CI_Controller{
 	public function profile($username){
 		$data['judul'] = 'Profile';
 		$data['deviant'] = $this->M_akun->getdeviantsById($username);
+		$id = $data['deviant']['id_deviants'];
+		$watcherrss = $this->M_akun->getWatchers($id);
+		$array_username = array();
+		foreach($watcherrss as $wtch){
+			$array_username[] = ($this->M_akun->getdeviantsUsername($wtch['watchers']))['username'];
+		}
+
+		$data['watchers'] =  $array_username;
 
 		$this->load->view('template/loggedin-header');
 		$this->load->view('profile/profile', $data);

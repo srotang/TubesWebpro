@@ -46,5 +46,18 @@ class M_akun extends CI_model
 		];
 		$this->db->update('deviants', $data);
 	}
+
+	public function getWatchers($id){
+		$query = $this->db->get_where("watching", array('watching'=> $id));
+		return $query->result_array();
+	}
+
+	public function getdeviantsUsername($id)
+	{
+		//get data deviants based on username
+		$where = array('id_deviants' => $id );
+		$query = $this->db->get_where("deviants",$where);
+		return $query->row_array();
+	}
 }
 ?>

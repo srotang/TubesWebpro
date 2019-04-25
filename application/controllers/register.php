@@ -29,6 +29,7 @@
             $data['username'] =    $this->input->post('cusername');
             $data['email']  =    $this->input->post('email1');
             $data['password'] =    md5($this->input->post('password1'));
+            $data['fotoProfile'] = "default.png";
 
             $this->M_akun->tambahDatadeviants($data);
             
