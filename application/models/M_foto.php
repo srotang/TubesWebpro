@@ -9,6 +9,12 @@ class M_foto extends CI_model
 		return $this->db->get('contents')->result();
 	}
 
+	public function getAllfotoAndCreator(){
+		$text = "SELECT deviants.username as username, deviants.fotoProfile as fotoProfile, contents.content_dir as content_dir, contents.content_title as content_title From contents INNER JOIN deviants on deviants.id_deviants=contents.id_deviants";
+		$query = $this->db->query($text);
+		return $query->result_array();
+	}
+
 	public function getuserContent($id){
 		$query = $this->db->get_where("contents", array('id_deviants'=> $id));
 		return $query->result_array();

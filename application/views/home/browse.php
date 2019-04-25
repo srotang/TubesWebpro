@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>DeviantArt - Discover The Largest Online Art Gallery and Community</title>
-    <link rel="stylesheet" src="<?php echo base_url();?>/assets/css/profile-dev.css">
+           
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/watch-styles.css">
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/profile-dev.css">
     <style>
     .container {
         width: 100%;
@@ -103,17 +107,21 @@
             </div>
         </div>
     </div>
-    <div class="content">
-        <?php foreach($contents as $content){ ?>
-        <div class="content-link-container">
-            <div class="content-galls">
-                <a href="<?=base_url()?>"> <!--Isi link disini gung-->
-                    <img class="img-content" src="<?php base_url()?>assets/upload/<?= $content->content_dir ?>">
-                </a>
-            </div>
-            </a>
-        </div>
-        <?php } ?>
+            <?php foreach ($contents as $cont) { ?>
+                <div class="content-link-container">
+                    <a href="#" class="content-link">
+                        <div class="content-galls">
+                            <img class="img-content" src="<?php base_url()?>assets/upload/<?= $cont['content_dir'] ?>">
+                        </div>
+                        <div class="content-link-details">
+                                <h5><?= $cont['content_title']; ?></h5>
+                                <div class="form-inline">
+                                    <img src="<?= base_url(); ?>/assets/profile/<?= $cont['fotoProfile'] ?>" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; <?= $cont['username']; ?></h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <?php } ?>
     </div>
 
 </body>
