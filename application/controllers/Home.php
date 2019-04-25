@@ -25,7 +25,7 @@ class Home extends CI_Controller{
 	}
 	
 	public function post($id){
-		$data['idd'] = $this->M_foto->getuserContent($id);
+		$data['idd'] = $this->M_foto->getimgContent($id);
 		if( $this->CI->session->userdata('username') == '' ){
 			$this->load->view('template/default-header');
 		}

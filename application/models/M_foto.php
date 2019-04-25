@@ -17,6 +17,10 @@ class M_foto extends CI_model
 
 	public function getuserContent($id){
 		$query = $this->db->get_where("contents", array('id_deviants'=> $id));
+		return $query->result_array();
+	}
+	public function getimgContent($id){
+		$query = $this->db->get_where("contents", array('id_contents'=> $id));
 		return $query->row();
 	}
 
