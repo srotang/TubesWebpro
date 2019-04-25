@@ -21,8 +21,8 @@
                 <div class="upper-title">
                     <a href="#"><img class="poster-profile-pic" src="img-examples/c49.jpg"></a>
                     <div class="post-title">
-                        <div class="post-title-p">Viva la Webproo</div>
-                        <div class="post-title-by">by <a href="#" class="poster-username-link">User</a></div>
+                        <div class="post-title-p"><?=$idd->content_title?></div>
+                        <div class="post-title-by">by <a href="#" class="poster-username-link"><?=$idd->username?></a></div>
                     </div>
                     <button class="download-btn"><img class="download-icon" src="<?= base_url();?>assets/img-css/download-logo.png" width="20px" height="20px">&nbsp;Free Download</button>
                 </div>

@@ -20,7 +20,8 @@ class M_foto extends CI_model
 		return $query->result_array();
 	}
 	public function getimgContent($id){
-		$query = $this->db->get_where("contents", array('id_contents'=> $id));
+		$text = "SELECT deviants.fotoProfile as fotoprofile ,deviants.username as username, contents.id_contents as id_contents,contents.content_title as content_title,contents.content_desc as content_desc,contents.content_dir as content_dir from contents join deviants on contents.id_deviants = deviants.id_deviants where id_contents = $id";
+		$query = $this->db->query($text);
 		return $query->row();
 	}
 
