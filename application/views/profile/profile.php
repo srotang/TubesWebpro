@@ -37,10 +37,10 @@
         <div class="menu-prof">
             <ul class="navigation-prof">
                 <li class="element-nav-pr   link-an-active">
-                    <a class="link-an-menu" href="<?= base_url()?>/profile/<?= $_SESSION['username']?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
+                    <a class="link-an-menu" href="<?= base_url(); ?>index.php/Profile/profile/<?= $this->session->userdata('username') ?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
                 </li>
                 <li class="element-nav-pr">
-                    <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
+                    <a class="link-an-menu" href="<?= base_url(); ?>index.php/Profile/gallery/<?= $this->session->userdata('username') ?>"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
                 </li>
             </ul> 
         </div>
