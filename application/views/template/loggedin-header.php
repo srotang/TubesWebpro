@@ -11,7 +11,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
-        <a class="navbar-brand" href="<?=base_url('index.php/Loggedin')?>"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
+        <a class="navbar-brand" href="<?=base_url()?>/Loggedin"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >
               <ul class="navbar-nav mr-auto">
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#">MORE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url('index.php/profile/submit');?>"><button class='btn tombolsubmit'>SUBMIT</button></a>
+                  <a class="nav-link" href="<?=base_url();?>/profile/submit"><button class='btn tombolsubmit'>SUBMIT</button></a>
                 </li>
               </ul>
               <ul class="navbar-nav make-it-right">
@@ -44,7 +44,7 @@
                       <div class="profile-dropdown-content dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item prf" href="<?= base_url(); ?>index.php/Profile/profile/<?= $this->session->userdata('username') ?>" >Profile</a><!-- Tambahin link ke profie user -->
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?= base_url('index.php/login/logout')?>">Logout</a><!-- ke Logout session -->
+                        <a class="dropdown-item" href="<?= base_url()?>/login/logout">Logout</a><!-- ke Logout session -->
                       </div>
                     </div>
                   </li>

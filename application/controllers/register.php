@@ -34,7 +34,7 @@
             
             $pesan['message'] =    "Pendaftaran berhasil";
             
-            redirect('index.php/home');
+            redirect('index.php/loggedin');
         }
      }
  }

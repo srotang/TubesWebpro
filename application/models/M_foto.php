@@ -6,7 +6,7 @@ class M_foto extends CI_model
 	public function getAllfoto()
 	{
 		//use query builder to get data table "foto"
-		return $this->db->get('foto')->result_array();
+		return $this->db->get('contents')->result();
 	}
 
 	public function tambahDatafoto()
