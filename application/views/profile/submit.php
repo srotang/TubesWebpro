@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <title>DeviantArt - Discover The Largest Online Art Gallery and Community</title>
-    
   </head>
   <body>
-    <div id="container">
+  <div id="container">
 	<div id="tabbar">
 	</div>
 	<div id="left">
@@ -84,6 +83,5 @@
 		Let deviants download this file for free.
 	</div>
 </div>																																					
-
   </body>
 </html>

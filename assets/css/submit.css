@@ -11,7 +11,7 @@ body{
     position: fixed;
     right: 0px;
     top: 54px;
-    width: 1263.33px;
+    width: 100%;
     z-index: 199;
     perspective-origin: 631.667px 15px;
     transform-origin: 631.667px 15px;
@@ -84,7 +84,7 @@ body{
 }
 #submit-tab-container {
     height: 25px;
-    width: 1208.33px;
+    width: 100%;
     perspective-origin: 616.667px 12.5px;
     transform-origin: 616.667px 12.5px;
     font: normal normal 400 normal 12px / normal Verdana, sans-serif;
@@ -987,7 +987,7 @@ tr {
     margin: 0px 0px 20px;
     padding: 6px 6px 0px;
     position: relative;
-    top: -1px;
+    top: 100px;
 }
 #download {
     box-shadow: rgb(231, 231, 231) 0px 0px 3px 0px inset;
@@ -1005,7 +1005,7 @@ tr {
     padding: 10px;
     position: relative;
     left: 770px;
-    top: -233px;
+    margin-top:2900px;
 }
 
 #INPUT_2 {
