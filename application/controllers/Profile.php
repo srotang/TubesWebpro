@@ -36,15 +36,9 @@ class Profile extends CI_Controller{
 		
 		public function gallery($username){
 			$data['judul'] = 'Profile';
-		$data['deviant'] = $this->M_akun->getdeviantsById($username);
-		$id = $data['deviant']['id_deviants'];
-		$watcherrss = $this->M_akun->getWatchers($id);
-		$array_username = array();
-		foreach($watcherrss as $wtch){
-			$array_username[] = ($this->M_akun->getdeviantsUsername($wtch['watchers']))['username'];
-		}
-		$data['contents'] = $this->M_foto->getuserContent($id);
-		$data['watchers'] = $array_username;
+			$data['deviant'] = $this->M_akun->getdeviantsById($username);
+			$id = $data['deviant']['id_deviants'];
+			$data['contents'] = $this->M_foto->getuserContent($id);
 			$this->load->view('template/loggedin-header');
 			$this->load->view('profile/gallery',$data);
 			$this->load->view('template/footer');
