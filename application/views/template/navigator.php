@@ -40,7 +40,7 @@
                     <a class="nav-link browses" href="<?= base_url()?>/Watch">WATCH</a>
               </li>
               <li class="nav-item" id="back-to-top">
-                  <input id="back-to-top-icon" type="Image" src="<?= base_url('assets/img-css/icon.jpg')?>" style="height:20px;position: relative; top: 8px;right: 5px;">Top
+                  <input onclick="topFunction()" id="back-to-top-icon" type="Image" src="<?= base_url('assets/img-css/icon.jpg')?>" style="height:20px;position: relative; top: 8px;right: 5px;">Top
               </ul>
             </div>
           </nav>
@@ -63,19 +63,23 @@
                 }
               }
       </script>
-      <!-- <script>
-      $(document).ready(function(){
-              $(window).scroll(function(){
-                if($(this).scrollTop() > 40){
-                  $('#backToTop').fadeIn();
-                }else{
-                  $('#backToTop').fadeOut();
-                }
-              });
-              $("#backToTop").click(function(){
-                $('html ,body').animate({scrollTop : 0}, 700);
-              });
-            });
-          </script> -->
+       <script>
+      // $(document).ready(function(){
+      //         $(window).scroll(function(){
+      //           if($(this).scrollTop() > 40){
+      //             $('#back-to-top').fadeIn();
+      //           }else{
+      //             $('#back-to-top').fadeOut();
+      //           }
+      //         });
+      //         $("#back-to-top").click(function(){
+      //           $('html ,body').animate({scrollTop : 0}, 700);
+      //         });
+      //       });
+      function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+          </script> 
     </body>
 </html>

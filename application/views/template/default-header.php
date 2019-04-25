@@ -30,9 +30,6 @@
                 <li class="nav-item itemlain">
                     <a class="nav-link" href="#">MORE</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><button class='btn tombolsubmit'>SUBMIT</button></a>
-                </li>
               </ul>
               <ul class="navbar-nav make-it-right">
                   <li class="nav-item">
