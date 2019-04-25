@@ -39,9 +39,10 @@ class Upload extends CI_Controller{
             );
             $this->M_upload->tambahDataContent($data);
 			$this->session->set_flashdata("sukses","Asup boiiiiiii......"); 
-			$this->load->view('template/loggedin-header');
-			$this->load->view('profile/gallery', $data);
-			$this->load->view('template/footer');
+			
+			$direksi = 'index.php/Profile/gallery/'.$this->session->userdata('username');
+
+			redirect(base_url($direksi));
 		}
 	}
 

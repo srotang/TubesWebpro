@@ -16,7 +16,7 @@
                         
                         <div class="dropdown">
                                 <a class="btn btn-secondary edit-profile-pic" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="profile-ph" src="img-examples/maxresdefault.jpg">
+                                    <img class="profile-ph" src="<?= base_url();?>/assets/profile/<?= $deviant['fotoProfile'] ?>">
                                 </a>
                               
                                 <div class="dropdown-menu">
@@ -33,7 +33,7 @@
                               </div>
                     </td>
                     <td>
-                        <a class="user-link-prof" href="#">&nbsp;Username</a>
+                        <a class="user-link-prof" href="#">&nbsp;<?= $deviant['username'] ?></a>
                     </td>
                 </tr>
             </table>
@@ -42,10 +42,10 @@
         <div class="menu-prof">
             <ul class="navigation-prof">
                 <li class="element-nav-pr">
-                    <a class="link-an-menu" href="#"><img class="profile-icon" src="css/img-css/info_profile.svg">Profile</a>
+                    <a class="link-an-menu" href="#"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/info_profile.svg">Profile</a>
                 </li>
                 <li class="element-nav-pr link-an-active">
-                    <a class="link-an-menu" href="#"><img class="profile-icon" src="css/img-css/gallery_icon.png">Gallery</a>
+                    <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
                 </li>
             </ul>
         </div>
@@ -58,123 +58,21 @@
                 </form>
             </div>
             <div class="gallery-contents">
+            <?php foreach ($contents as $cont) { ?>
                 <div class="content-link-container">
-                        <a href="#" class="content-link">
-                            <div class="content-galls">
-                                <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                            </div>
-                            <div class="content-link-details">
-                                    <h5>Title</h5>
-                                    <div class="form-inline">
-                                        <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="content-link-container">
-                            <a href="#" class="content-link">
-                                <div class="content-galls">
-                                    <img class="img-content" src="img-examples/male_anatomy_by_sarah_dep_d2fggtx.jpg">
-                                </div>
-                                <div class="content-link-details">
-                                        <h5>Title</h5>
-                                        <div class="form-inline">
-                                            <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                        </div>
-                                </div>
-                            </a>
+                    <a href="#" class="content-link">
+                        <div class="content-galls">
+                            <img class="img-content" src="<?= base_url();?>/assets/upload/<?= $cont['content_dir'] ?>">
                         </div>
-                        <div class="content-link-container">
-                            <a href="#" class="content-link">
-                                <div class="content-galls">
-                                        <img class="img-content" src="img-examples/the_avengers_by_flowmediaproductions_d7ibyms.png">
-                                </div>
-                                    <div class="content-link-details">
-                                        <h5>Title</h5>
-                                        <div class="form-inline">
-                                            <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                        </div>
-                                    </div>
-                            </a>
-                        </div>
-                        <div class="content-link-container">
-                                <a href="#" class="content-link">
-                                    <div class="content-galls">
-                                        <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                                    </div>
-                                    <div class="content-link-details">
-                                            <h5>Title</h5>
-                                            <div class="form-inline">
-                                                <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                        </div>
-                                    </div>
-                                </a>
+                        <div class="content-link-details">
+                                <h5><?= $cont['content_title']; ?></h5>
+                                <div class="form-inline">
+                                    <img src="<?= base_url(); ?>/assets/profile/<?= $deviant['fotoProfile'] ?>" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; <?= $deviant['username']; ?></h6>
                             </div>
-                            <div class="content-link-container">
-                                    <a href="#" class="content-link">
-                                        <div class="content-galls">
-                                            <img class="img-content" src="img-examples/maxresdefault.jpg">
-                                        </div>
-                                        <div class="content-link-details">
-                                                <h5>Title</h5>
-                                                <div class="form-inline">
-                                                    <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                                </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="content-link-container">
-                                    <a href="#" class="content-link">
-                                        <div class="content-galls">
-                                                <img class="img-content" src="img-examples/back_to_back_against_the_world_by_ioruko_dd49f62.png">
-                                        </div>
-                                            <div class="content-link-details">
-                                                <h5>Title</h5>
-                                                <div class="form-inline">
-                                                    <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                                </div>
-                                            </div>
-                                    </a>
-                                </div>
-                                <div class="content-link-container">
-                                        <a href="#" class="content-link">
-                                            <div class="content-galls">
-                                                <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                                            </div>
-                                            <div class="content-link-details">
-                                                    <h5>Title</h5>
-                                                    <div class="form-inline">
-                                                        <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="content-link-container">
-                                            <a href="#" class="content-link">
-                                                <div class="content-galls">
-                                                    <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                                                </div>
-                                                <div class="content-link-details">
-                                                        <h5>Title</h5>
-                                                        <div class="form-inline">
-                                                            <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                                        </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="content-link-container">
-                                            <a href="#" class="content-link">
-                                                <div class="content-galls">
-                                                        <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                                                </div>
-                                                    <div class="content-link-details">
-                                                        <h5>Title</h5>
-                                                        <div class="form-inline">
-                                                            <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                                        </div>
-                                                    </div>
-                                            </a>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+            <?php } ?>
             </div>
         </div>
 
