@@ -24,7 +24,7 @@ class Home extends CI_Controller{
 		$this->load->view('home/browse',$data);
 		$this->load->view('template/footer');
 	}
-
+	
 	public function post(){
 		if( $this->CI->session->userdata('username') == '' ){
 			$this->load->view('template/default-header');

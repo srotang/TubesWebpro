@@ -106,12 +106,14 @@
     <div class="content">
         <?php foreach($contents as $content){ ?>
         <div class="content-link-container">
-                <div class="content-galls">
+            <div class="content-galls">
+                <a href="<?=base_url()?>"> <!--Isi link disini gung-->
                     <img class="img-content" src="<?php base_url()?>assets/upload/<?= $content->content_dir ?>">
-                </div>
+                </a>
+            </div>
             </a>
         </div>
-    <?php } ?>
+        <?php } ?>
     </div>
 
 </body>
