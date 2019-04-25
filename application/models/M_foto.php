@@ -9,6 +9,11 @@ class M_foto extends CI_model
 		return $this->db->get('contents')->result();
 	}
 
+	public function getuserContent($id){
+		$query = $this->db->get_where("contents", array('id_deviants'=> $id));
+		return $query->result_array();
+	}
+
 	public function tambahDatafoto()
 	{
 		$data = [
@@ -26,7 +31,6 @@ class M_foto extends CI_model
 
 	public function getfotoBynama($namaF)
 	{
-		 
 		return $this->db->get_where('foto', ['namaf'=>$namaF])->row_array();
 	}
 }

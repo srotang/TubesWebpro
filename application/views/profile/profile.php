@@ -1,4 +1,4 @@
-    <head>
+    <head>  
        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/watch-styles.css">
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/profile-dev.css">
     </head>
@@ -14,7 +14,7 @@
                                     <img class="profile-ph" src="<?php echo base_url();?>/assets/profile/<?= $deviant['fotoProfile']; ?>">
                                 </a>
                               
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                         <form class="edit-photo-profile px-4 py-3">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -54,12 +54,15 @@
                                 </div>
                                 <div class="card-body">
                                     <ul class="newdev-list">
+                                        <?php $i=0; ?>
+                                        <?php foreach ($contents as $cont) { ?>
+
                                         <li class="newdev-elements">
-                                            <img class="deviations-pr" src="img-examples/back_to_back_against_the_world_by_ioruko_dd49f62.png">
+                                            <img class="deviations-pr" src="<?php echo base_url();?>assets/upload/<?= $cont['content_dir']; ?>">
                                         </li>
-                                        <li class="newdev-elements">
-                                            <img class="deviations-pr" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
-                                        </li>
+                                            <?php $i++; ?>
+                                            <?php if($i > 2) {break;} ?>
+                                        <?php } ?>
                                     </ul>
                                     <div class="button-group btn-gr-newdev">
                                         <a href="#" class="btn btn-light newdev-btn nebtn-gall">Browse Gallery</a>
@@ -74,7 +77,7 @@
                                 <div class="card-body">
                                     <ul class="watchers-list">
                                     <?php foreach ($watchers as $wtch){ ?>
-                                        <li><a class="watchers" href="#"><?php echo $wtch; ?></a></li>
+                                        <li><a class="watchers" href="<?= base_url(); ?>/index.php/Profile/profile/<?= $wtch ?>"><?php echo $wtch; ?></a></li>
                                     <?php } ?>
                                     </ul>
                                 </div>

@@ -4,9 +4,8 @@ class Profile extends CI_Controller{
 	public function __construct()
 	{
 		parent::__construct();
-		//load model "Mahasiswa_model"
 		$this->load->model("M_akun");
-		//load library form validation
+		$this->load->model("M_foto");
 		$this->load->library('form_validation');
 	}
 
@@ -23,8 +22,8 @@ class Profile extends CI_Controller{
 		foreach($watcherrss as $wtch){
 			$array_username[] = ($this->M_akun->getdeviantsUsername($wtch['watchers']))['username'];
 		}
-
-		$data['watchers'] =  $array_username;
+		$data['contents'] = $this->M_foto->getuserContent($id);
+		$data['watchers'] = $array_username;
 
 		$this->load->view('template/loggedin-header');
 		$this->load->view('profile/profile', $data);
