@@ -10,11 +10,13 @@
     <body>
         <div class="post-content">
             <div class="post-content-img">
+                
                 <center>
-                <img class="the-image-pst" src="img-examples/back_to_back_against_the_world_by_ioruko_dd49f62.png">
+                <img class="the-image-pst" src="<?=base_url()?>assets/upload/<?= $idd->content_dir?>">
                 </center>
+              
             </div>
-
+            
             <div class="post-status">
                 <div class="upper-title">
                     <a href="#"><img class="poster-profile-pic" src="img-examples/c49.jpg"></a>

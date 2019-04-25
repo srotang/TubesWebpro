@@ -111,7 +111,9 @@
                 <div class="content-link-container">
                     <a href="#" class="content-link">
                         <div class="content-galls">
+                            <a href="<?=base_url()?>home/post/<?= $cont['id_contents'] ?>"> 
                             <img class="img-content" src="<?php base_url()?>assets/upload/<?= $cont['content_dir'] ?>">
+                            </a>
                         </div>
                         <div class="content-link-details">
                                 <h5><?= $cont['content_title']; ?></h5>
