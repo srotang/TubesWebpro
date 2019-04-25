@@ -33,14 +33,14 @@
              $this->CI->session->set_userdata('id', $id);
  
              //redirect ke halaman dashboard
-             redirect('index.php/Loggedin');
+             redirect('Loggedin');
          }else{
  
              //jika tidak ada, set notifikasi dalam flashdata.
              $this->CI->session->set_flashdata('sukses','Username atau password anda salah, silakan coba lagi.. ');
  
              //redirect ke halaman login
-             redirect('index.php/Login');
+             redirect('Login');
          }
           return false;
       }
