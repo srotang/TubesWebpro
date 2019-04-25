@@ -16,7 +16,7 @@
                         
                         <div class="dropdown">
                                 <a class="btn btn-secondary edit-profile-pic" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="profile-ph" src="<?=base_url()?>assets/img-css/default.png">
+                                    <img class="profile-ph" src="<?= base_url();?>/assets/profile/<?= $deviant['fotoProfile'] ?>">
                                 </a>
                               
                                 <div class="dropdown-menu">
@@ -58,20 +58,21 @@
                 </form>
             </div>
             <div class="gallery-contents">
+            <?php foreach ($contents as $cont) { ?>
                 <div class="content-link-container">
-                        <a href="#" class="content-link">
-                            <div class="content-galls">
-                                <img class="img-content" src="img-examples/circle_of_no_by_tsaoshin_d6h8pug.png">
+                    <a href="#" class="content-link">
+                        <div class="content-galls">
+                            <img class="img-content" src="<?= base_url();?>/assets/upload/<?= $cont['content_dir'] ?>">
+                        </div>
+                        <div class="content-link-details">
+                                <h5><?= $cont['content_title']; ?></h5>
+                                <div class="form-inline">
+                                    <img src="<?= base_url(); ?>/assets/profile/<?= $deviant['fotoProfile'] ?>" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; <?= $deviant['username']; ?></h6>
                             </div>
-                            <div class="content-link-details">
-                                    <h5>Title</h5>
-                                    <div class="form-inline">
-                                        <img src="img-examples/doraemon.jpg" width="20px" height="20px" class="content-creator-ph"><h6>&nbsp; username1</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                   
+                        </div>
+                    </a>
+                </div>
+            <?php } ?>
             </div>
         </div>
 

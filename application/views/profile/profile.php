@@ -42,7 +42,7 @@
                 <li class="element-nav-pr">
                     <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="<?= base_url(); ?>assets/img-css/gallery_icon.png">Gallery</a>
                 </li>
-            </ul>
+            </ul> 
         </div>
         <div class="the-bord-top"></div>
         <div class="table-example">

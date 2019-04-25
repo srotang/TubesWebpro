@@ -7,6 +7,9 @@ class Profile extends CI_Controller{
 		$this->load->model("M_akun");
 		$this->load->model("M_foto");
 		$this->load->library('form_validation');
+		$this->load->library('simple_login');
+		
+		$this->CI =& get_instance();
 	}
 
 	public function index(){
@@ -31,14 +34,19 @@ class Profile extends CI_Controller{
 		$this->load->view('template/footer');
 	}
 		
-  public function gallery(){
-    $this->load->view('template/loggedin-header');
-		$this->load->view('profile/gallery');
-		$this->load->view('template/footer');
-    }
+		public function gallery($username){
+			$data['judul'] = 'Profile';
+			$data['deviant'] = $this->M_akun->getdeviantsById($username);
+			$id = $data['deviant']['id_deviants'];
+			$data['contents'] = $this->M_foto->getuserContent($id);
+
+			$this->load->view('template/loggedin-header');
+			$this->load->view('profile/gallery', $data);
+			$this->load->view('template/footer');
+		}
     public function submit(){
-    $this->load->view('template/loggedin-header');
-		$this->load->view('profile/submit');
-		$this->load->view('template/footer');
+			$this->load->view('template/loggedin-header');
+			$this->load->view('profile/submit');
+			$this->load->view('template/footer');
     }
 }

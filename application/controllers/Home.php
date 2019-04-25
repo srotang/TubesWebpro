@@ -24,6 +24,7 @@ class Home extends CI_Controller{
 		$this->load->view('home/browse',$data);
 		$this->load->view('template/footer');
 	}
+	
 	public function post(){
 		if( $this->CI->session->userdata('username') == '' ){
 			$this->load->view('template/default-header');
@@ -31,8 +32,9 @@ class Home extends CI_Controller{
 		else {
 			$this->load->view('template/loggedin-header');
 		}
-		$this->load->model('M_foto');
-		$this->load->view('home/post',$data);
+		$this->load->view('template/navigator');
+		$this->load->view('home/post');
+		$this->load->view('template/footer');
 	}
 	
 }
