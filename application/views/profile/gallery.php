@@ -33,7 +33,7 @@
                               </div>
                     </td>
                     <td>
-                        <a class="user-link-prof" href="#">&nbsp;<?= $deviant['username'] ?></a>
+                        <a class="user-link-prof" href="">&nbsp;<?= $this->session->userdata('username')?></a>
                     </td>
                 </tr>
             </table>

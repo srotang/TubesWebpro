@@ -13,7 +13,9 @@ class Profile extends CI_Controller{
 	}
 
 	public function index(){
-
+		$this->load->view('template/loggedin-header');
+		$this->load->view('profile');
+		$this->load->view('template/footer');
 		}
 
 	public function profile($username){
@@ -27,20 +29,15 @@ class Profile extends CI_Controller{
 		}
 		$data['contents'] = $this->M_foto->getuserContent($id);
 		$data['watchers'] = $array_username;
-
 		$this->load->view('template/loggedin-header');
 		$this->load->view('profile/profile', $data);
 		$this->load->view('template/footer');
 	}
 		
-		public function gallery($username){
-			$data['judul'] = 'Profile';
-			$data['deviant'] = $this->M_akun->getdeviantsById($username);
-			$id = $data['deviant']['id_deviants'];
-			$data['contents'] = $this->M_foto->getuserContent($id);
-
+		public function gallery(){
+		
 			$this->load->view('template/loggedin-header');
-			$this->load->view('profile/gallery', $data);
+			$this->load->view('profile/gallery');
 			$this->load->view('template/footer');
 		}
     public function submit(){
