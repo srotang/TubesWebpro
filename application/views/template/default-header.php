@@ -11,7 +11,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
-            <a class="navbar-brand" href="<?=base_url('index.php/home')?>"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
+            <a class="navbar-brand" href="<?=base_url()?>/home"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >
               <ul class="navbar-nav mr-auto">
@@ -36,10 +36,10 @@
               </ul>
               <ul class="navbar-nav make-it-right">
                   <li class="nav-item">
-                      <a href="<?= base_url('index.php/register')?>" class="nav-link">Join</a>
+                      <a href="<?= base_url()?>/register" class="nav-link">Join</a>
                   </li>
                   <li class="nav-item">
-                      <a href="<?= base_url('index.php/login')?>" class="nav-link">Login</a>
+                      <a href="<?= base_url()?>/login" class="nav-link">Login</a>
                   </li>
               </ul>
             </div>

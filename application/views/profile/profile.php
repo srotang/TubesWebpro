@@ -45,7 +45,7 @@
                     <a class="link-an-menu" href=""><img class="profile-icon" src="css/img-css/info_profile.svg">Profile</a>
                 </li>
                 <li class="element-nav-pr">
-                    <a class="link-an-menu" href="<?= base_url('index.php/Profile/gallery')?>"><img class="profile-icon" src="css/img-css/gallery_icon.png">Gallery</a>
+                    <a class="link-an-menu" href="<?= base_url()?>/Profile/gallery"><img class="profile-icon" src="css/img-css/gallery_icon.png">Gallery</a>
                 </li>
             </ul>
         </div>

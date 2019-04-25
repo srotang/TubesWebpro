@@ -40,7 +40,7 @@
             <div class="card-header">
                 <a class="card-title card-title-profile" href="#">
                     <!-- Foto Profil Poster, Username -->
-                    <img class="profile-ph" src="img-examples/c49.jpg">&nbsp;<?=$this->session->userdata('username')?>
+                    <img class="profile-ph" src="<?=base_url()?>assets/img-css/default.png">&nbsp;<?=$this->session->userdata('username')?>
                 </a>
                 <small class="text-muted floated-date">
                     <div class="btn-group">
