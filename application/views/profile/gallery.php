@@ -23,16 +23,15 @@
                         </a>
 
                         <div class="dropdown-menu">
-                        <form method="POST" id="btn-upload" enctype="multipart/form-data" action="<?= base_url()?>/Profile/fotoP"> 
-			<input type="hidden" name="action" value="StashPost" id="INPUT_8"/> <a id="A_9"> <span id="SPAN_27">Choose a file to upload</span>
-				<input type="file" name="file" id="INPUT_11" /></a>
-			<input type="hidden" name="folder_name" value="Saved Submissions" id="INPUT_12" />
-			<input type="hidden" name="use_defaults" value="1" id="INPUT_13" />
-			
-		
-		<input type="submit" value="submit"/>
-	</div>
-		</form>
+                        <form method="POST" class="edit-photo-profile px-4 py-3" action="<?=base_url()?>Profile/fotoP">
+                                            <div class="custom-file">
+                                                <input type="file" name='file' class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                            </div>
+                                            <div class="save-ph">
+                                                <input type="submit" class="save-edit-ph btn btn-primary" value="Save">
+                                            </div>
+                                        </form>
                         </div>
                     </div>
                 </td>
