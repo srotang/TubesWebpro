@@ -43,6 +43,14 @@ class Profile extends CI_Controller{
 			$this->load->view('profile/gallery',$data);
 			$this->load->view('template/footer');
 		}
+
+		public function delete($id){
+			$this->M_foto->hapusDatafoto($id);
+			$usernameee = $this->session->userdata('username');
+			$direktori = "/profile/gallery/".$usernameee;
+			redirect($direktori);
+		}
+
     public function submit(){
 			$this->load->view('template/loggedin-header');
 			$this->load->view('profile/submit');

@@ -78,6 +78,13 @@
                                 height="20px" class="content-creator-ph">
                             <h6>&nbsp; <?= $deviant['username']; ?></h6>
                         </div>
+                        <?php 
+                            if($this->session->userdata('username') == $deviant['username']){
+                        ?>
+                        <form action="<?= base_url(); ?>/profile/delete/<?= $cont['id_contents'] ?>"> 
+                            <input type="submit" class="delete" id="deletecontent" name="delete" value="delete">
+                        </form>
+                            <?php } ?>
                     </div>
                 </a>
             </div>

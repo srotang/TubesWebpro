@@ -33,12 +33,6 @@
                 <li class="nav-item active">
                   <a class="nav-link browses-active browses" href="<?= base_url()?>/home">BROWSE</a>
                 </li>
-                <li class="nav-item">
-                  <img class="strokee" src=<?= base_url("assets/img-css/fixednav-stroke.png")?> width="22px" height="41px">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link browses" href="<?= base_url()?>/Watch">WATCH</a>
-              </li>
               <li class="nav-item" id="back-to-top">
                   <input onclick="topFunction()" id="back-to-top-icon" type="Image" src="<?= base_url('assets/img-css/icon.jpg')?>" style="height:20px;position: relative; top: 8px;right: 5px;">Top
               </ul>

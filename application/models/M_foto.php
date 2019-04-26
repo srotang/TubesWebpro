@@ -35,9 +35,10 @@ class M_foto extends CI_model
 		$this->db->insert('foto', $data);
 	}
 
-	public function hapusDatafoto()
+	public function hapusDatafoto($id)
 	{
-		$this->db->delete('foto');
+		$text = "DELETE FROM contents where id_contents=$id";
+		$query = $this->db->query($text);
 	}
 
 	public function getfotoBynama($namaF)
