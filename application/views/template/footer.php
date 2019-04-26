@@ -19,6 +19,10 @@
         height: 50px;
         text-align: center;
     }
+
+    .uppernav{
+        background-color:#475C4D;
+    }
     </style>
 </head>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>

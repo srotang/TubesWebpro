@@ -10,7 +10,7 @@
             <title></title>
     </head>
     <body>
-        <nav class="navbar navbar-expand navbar-dark bg-dark uppernav d-flex">
+        <nav class="navbar navbar-expand navbar-dark d-flex uppernav ">
         <a class="navbar-brand" href="<?=base_url()?>/Loggedin"><img src="<?= base_url('assets/img-css/logo-mark.png')?>"><img src="<?= base_url('assets/img-css/logo-type.png')?>"></a>
           
             <div class="navbar collapse navbar-collapse" >

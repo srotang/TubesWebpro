@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-           
-        <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/watch-styles.css">
-        <title>
-
-        </title>
         <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/profile-dev.css">
     <style>
     .container {
@@ -17,6 +12,7 @@
     .sidebar {
         width: 193px;
         height: 700px;
+        margin-top:-40px;
         background-color: #DBE3D5;
         float: left;
         box-sizing: border-box;

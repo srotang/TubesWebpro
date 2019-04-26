@@ -22,7 +22,7 @@
                     <a href="#"><img class="poster-profile-pic" src="<?= base_url()?>/assets/profile/<?= $idd->fotoprofile ?>"></a>
                     <div class="post-title">
                         <div class="post-title-p"><?=$idd->content_title?></div>
-                        <div class="post-title-by">by <a href="#" class="poster-username-link"><?=$idd->username?></a></div>
+                        <div class="post-title-by">by <a href="<?= base_url();?>/profile/profile/<?= $idd->username; ?>" class="poster-username-link"><?=$idd->username?></a></div>
                     </div>
                     <button class="download-btn"><img class="download-icon" src="<?= base_url();?>assets/img-css/download-logo.png" width="20px" height="20px">&nbsp;Free Download</button>
                 </div>

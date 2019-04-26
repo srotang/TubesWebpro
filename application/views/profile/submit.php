@@ -4,6 +4,7 @@
     <title>DeviantArt - Discover The Largest Online Art Gallery and Community</title>
     
   </head>
+	<link rel="stylesheet" src="<?= base_url();?>/assets/css/submit_dev.css">
   <body>
     <div id="container">
 	<div id="tabbar">

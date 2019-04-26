@@ -193,3 +193,11 @@ margin-top:2px;
      border-top-left-radius: 0px;
      border: none;
  }
+
+ .uppernav{
+     background-color:#475C4D;
+ }
+
+ nav{
+     background-color:#475C4D!important;
+ }

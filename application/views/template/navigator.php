@@ -27,7 +27,7 @@
 </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand navbar-dark fixednav bg-dark" id="myHeader">
+        <nav class="navbar navbar-expand navbar-dark fixednav" id="myHeader">
             <div class="" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
