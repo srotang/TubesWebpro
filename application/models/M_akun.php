@@ -43,8 +43,9 @@ class M_akun extends CI_model
 			"email" => $this->input->post('email', true),
 			"password" => $this->input->post('password', true),
 			"username"=>$this->input->post('username',true),
+			
 		];
-		$this->db->update('deviants', $data);
+		$this->db->update('deviants',$data);
 	}
 
 	public function getWatchers($id){
@@ -58,6 +59,9 @@ class M_akun extends CI_model
 		$where = array('id_deviants' => $id );
 		$query = $this->db->get_where("deviants",$where);
 		return $query->row_array();
+	}
+	public function ubahfotoprofile($id,$data){
+		$query=$this->db->query('UPDATE DEVIANTS SET FOTOPROFILE= "$data" where id_deviants= "$id" ');
 	}
 }
 ?>
