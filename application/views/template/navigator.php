@@ -57,6 +57,22 @@
                 }
               }
       </script>
+<<<<<<< HEAD
+      <script>
+        $(document).ready(function(){
+                $(window).scroll(function(){
+                  if($(this).scrollTop() > 40){
+                    $('#back-to-top-icon').fadeIn();
+                  }else{
+                    $('#back-to-top-icon').fadeOut();
+                  }
+                });
+                $("#back-to-top-icon").click(function(){
+                  $('html ,body').animate({scrollTop : 0}, 700);
+                });
+              });
+        </script>
+=======
        <script>
       // $(document).ready(function(){
       //         $(window).scroll(function(){
@@ -75,5 +91,6 @@
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
           </script> 
+>>>>>>> 8f01d4ac36da5cda11966a90b4d284388fae7e68
     </body>
 </html>

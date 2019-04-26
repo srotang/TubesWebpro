@@ -7,6 +7,7 @@
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/navbar-dev.css">
+            <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/submit.css"> -->
             <title></title>
     </head>
     <body>
@@ -30,6 +31,12 @@
                 <li class="nav-item itemlain">
                     <a class="nav-link" href="#">MORE</a>
                 </li>
+<<<<<<< HEAD
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= base_url('index.php/submit')?>"><button class='btn tombolsubmit'>SUBMIT</button></a>
+                </li>
+=======
+>>>>>>> 8f01d4ac36da5cda11966a90b4d284388fae7e68
               </ul>
               <ul class="navbar-nav make-it-right">
                   <li class="nav-item">
