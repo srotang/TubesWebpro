@@ -19,7 +19,7 @@
             
             <div class="post-status">
                 <div class="upper-title">
-                    <a href="#"><img class="poster-profile-pic" src="img-examples/c49.jpg"></a>
+                    <a href="#"><img class="poster-profile-pic" src="<?= base_url()?>/assets/profile/<?= $idd->fotoprofile ?>"></a>
                     <div class="post-title">
                         <div class="post-title-p"><?=$idd->content_title?></div>
                         <div class="post-title-by">by <a href="#" class="poster-username-link"><?=$idd->username?></a></div>
@@ -29,12 +29,10 @@
                 <div class="post-divider"></div>
                 <div class="post-desc">
                     <p>
-                        this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text 
-                        this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text 
-                        this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text 
-                        this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text this-is-text 
+                        <?= $idd->content_desc ?>
                     </p>
                 </div>
+                <?php if($this->session->userdata('username') != ""){ ?>
                 <div class="post-comments">
                         <form class="form-comment">
                             <table>
@@ -51,7 +49,8 @@
                             </table>
                         </form>
                 </div>
-                <div class="post-comments-list">
+                <?php } ?>
+                <!-- <div class="post-comments-list">
                     <div class="the-comment-el">
                         <img class="commentor-profil-pic-pst" src="img-examples/c49.jpg">
                         <div class="the-commentor-comments">
@@ -64,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
